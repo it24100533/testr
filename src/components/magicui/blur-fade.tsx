@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useRef } from "react";
-import { useInView } from "react-intersection-observer"; // Fixed: Correct import
+import { useInView, type MarginType } from "react-intersection-observer";
 
 interface BlurFadeProps {
   children: React.ReactNode;
@@ -15,7 +15,7 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?: MarginType;  // <-- Use MarginType here
   blur?: string;
 }
 
@@ -31,19 +31,19 @@ const BlurFade = ({
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null);
-  const inViewResult = useInView(ref, { 
-    once: true, 
-    margin: inViewMargin as any // Fixed: Type assertion to resolve TypeScript error
+  const inViewResult = useInView(ref, {
+    once: true,
+    margin: inViewMargin, // No cast needed now
   });
   const isInView = !inView || inViewResult;
-  
+
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
     visible: { y: -yOffset, opacity: 1, filter: `blur(0px)` },
   };
-  
+
   const combinedVariants = variant || defaultVariants;
-  
+
   return (
     <AnimatePresence>
       <motion.div
