@@ -150,21 +150,21 @@ export const DATA = {
       issuer: "PagerDuty",
       date: "2023",
       logoUrl: "/PagerDuty.png",
-      link: "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+      link: "https://www.linkedin.com/learning/certificates/f3a053ef00a8b3c05ed93c020ae85ce33efb7cebc2c1f8fb5068d6485efc9663?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BjZwd21OJQAa1kOb0di3FUQ%3D%3D"
     },
     {
       name: "Docker Foundations Professional Certificate",
       issuer: "Docker, Inc",
       date: "2024",
       logoUrl: "/Dockerr.png",
-      link: "https://cloud.google.com/certification/data-engineer"
+      link: "https://www.linkedin.com/learning/certificates/a8cfb0f9be859c252fd4d5fb207f736971742a28b4a9eb4451f3bdf76719688e?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BjZwd21OJQAa1kOb0di3FUQ%3D%3D"
     },
      {
       name: "GitHub Foundations",
       issuer: "Github",
       date: "2024",
       logoUrl: "/gitl.svg",
-      link: "https://cloud.google.com/certification/data-engineer"
+      link: "https://www.credly.com/badges/9c91a2c0-c126-4c94-8893-86ac1f3654dc/linked_in_profile"
     },
 
          {
@@ -172,14 +172,14 @@ export const DATA = {
       issuer: "Canonical",
       date: "2024",
       logoUrl: "/Canonical.jpeg",
-      link: "https://cloud.google.com/certification/data-engineer"
+      link: "https://www.linkedin.com/learning/certificates/17dc7d808c030bb50c33f7743af4de27caead9e3b6d94af60c3fe52d1793cbe2"
     },
     {
       name: "Microservices Foundations Professional Certificate",
       issuer: "Kong Inc.",
       date: "2024",
       logoUrl: "/kongg.png",
-      link: "https://cloud.google.com/certification/data-engineer"
+      link: "https://www.linkedin.com/learning/certificates/f784d3f96e72aec0a7e07bb2732d78fcc8c271238dcaf3f32ab1fc24fcc7cb8b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BjZwd21OJQAa1kOb0di3FUQ%3D%3D"
     }
   ],
   projects: [
