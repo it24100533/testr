@@ -140,10 +140,10 @@ export const DATA = {
   certifications: [
              {
       name: "Oracle Cloud Infrastructure Certified Al Foundations Associate",
-      issuer: "Github",
-      date: "2024",
+      issuer: "Oracle",
+      date: "2025",
       logoUrl: "/ora.png",
-      link: "https://cloud.google.com/certification/data-engineer"
+      link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=D4F5BB1E1E59A5BA0167C8B748AE4E4C3D6A102DC023D0CC75E1C1B989D9B082"
     },
     {
       name: "DevOps Professional Certificate",
