@@ -19,11 +19,40 @@ export const metadata: Metadata = {
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
+  other: {
+    "msapplication-TileColor": "#000000",
+    "msapplication-TileImage": "/me.png",
+  },
   icons: {
     icon: [
       {
         url: "/me.png",
-        sizes: "any",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        url: "/me.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "/me.png",
+        sizes: "48x48",
+        type: "image/png",
+      },
+      {
+        url: "/me.png",
+        sizes: "96x96",
+        type: "image/png",
+      },
+      {
+        url: "/me.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/me.png",
+        sizes: "512x512",
         type: "image/png",
       },
     ],
@@ -66,6 +95,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/me.png" type="image/png" />
+        <link rel="shortcut icon" href="/me.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/me.png" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-8 sm:py-16 px-6",
