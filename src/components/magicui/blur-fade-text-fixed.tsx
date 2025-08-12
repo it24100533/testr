@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import { motion, Variants } from "framer-motion";
-import { useMemo } from "react";
 
 interface BlurFadeTextProps {
   text: string;
@@ -17,6 +16,7 @@ interface BlurFadeTextProps {
   yOffset?: number;
   animateByCharacter?: boolean;
 }
+
 const BlurFadeText = ({
   text,
   className,
@@ -28,12 +28,12 @@ const BlurFadeText = ({
 }: BlurFadeTextProps) => {
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: "blur(8px)" },
-    visible: { y: -yOffset, opacity: 1, filter: "blur(0px)" },
+    visible: { y: 0, opacity: 1, filter: "blur(0px)" },
   };
   const combinedVariants = variant || defaultVariants;
-  const characters = useMemo(() => Array.from(text), [text]);
 
-    if (animateByCharacter) {
+  if (animateByCharacter) {
+    const characters = Array.from(text);
     return (
       <div className="flex">
         {characters.map((char, i) => (
