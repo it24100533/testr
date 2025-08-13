@@ -284,15 +284,15 @@ export const DATA = {
       description:
         "A simple, student‑friendly GPA calculator built specifically for SLIIT students to help them quickly compute their semester and cumulative GPA accurately  ",
       technologies: [
-        "Next.js",
+        "Reactjs",
+        "Vite",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "ESLint",
+        "npm",
         "TailwindCSS",
         "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Radix UI",
+        "Vercel",
       ],
       links: [
         {
@@ -302,7 +302,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/ravindudanthanarayana/gpa",
           icon: <Icons.github className="size-3" />,
         },
       ],
