@@ -244,22 +244,19 @@ export const DATA = {
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
+      title: "Portfolio Website",
+      href: "#",
       dates: "April 2023 - September 2023",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "My old portfolio website featuring a clean, responsive design with smooth animations, interactive elements, and sections showcasing my projects, skills, and contact details.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "HTML5",
+        "CSS3",
+        "JavaScript(Vanilla) ",
+        "GSAP",
+        "AWS EC2",
+        "CloudFront",
       ],
       links: [
         {
@@ -274,7 +271,8 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      video:
+        "/portfolio.MOV",
     },
     {
       title: "GPA Calculator",
