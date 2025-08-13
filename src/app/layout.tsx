@@ -21,48 +21,48 @@ export const metadata: Metadata = {
   description: DATA.description,
   other: {
     "msapplication-TileColor": "#000000",
-    "msapplication-TileImage": "/favicon.png",
+    "msapplication-TileImage": "/favicon.png?v=3",
   },
   icons: {
     icon: [
       {
-        url: "/favicon.ico",
+        url: "/favicon.ico?v=3",
         sizes: "any",
         type: "image/x-icon",
       },
       {
-        url: "/favicon.png",
+        url: "/favicon.png?v=3",
         sizes: "16x16",
         type: "image/png",
       },
       {
-        url: "/favicon.png",
+        url: "/favicon.png?v=3",
         sizes: "32x32",
         type: "image/png",
       },
       {
-        url: "/favicon.png",
+        url: "/favicon.png?v=3",
         sizes: "48x48",
         type: "image/png",
       },
       {
-        url: "/favicon.png",
+        url: "/favicon.png?v=3",
         sizes: "96x96",
         type: "image/png",
       },
       {
-        url: "/favicon.png",
+        url: "/favicon.png?v=3",
         sizes: "192x192",
         type: "image/png",
       },
       {
-        url: "/favicon.png",
+        url: "/favicon.png?v=3",
         sizes: "512x512",
         type: "image/png",
       },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/favicon.png",
+    shortcut: "/favicon.ico?v=3",
+    apple: "/favicon.png?v=3",
   },
   openGraph: {
     title: `${DATA.name}`,
@@ -101,13 +101,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/favicon.png" type="image/png" sizes="16x16" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
-        <meta name="msapplication-TileImage" content="/favicon.png" />
+        <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon" />
+        <link rel="icon" href="/favicon.png?v=3" type="image/png" />
+        <link rel="icon" href="/favicon.png?v=3" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon.png?v=3" type="image/png" sizes="16x16" />
+        <link rel="shortcut icon" href="/favicon.ico?v=3" />
+        <link rel="apple-touch-icon" href="/favicon.png?v=3" />
+        <meta name="msapplication-TileImage" content="/favicon.png?v=3" />
         <meta name="msapplication-TileColor" content="#000000" />
       </head>
       <body
