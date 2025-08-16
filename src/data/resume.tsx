@@ -249,7 +249,7 @@ export const DATA = {
       dates: "April 2023 - September 2023",
       active: true,
       description:
-        "My old portfolio website featuring a clean, responsive design with smooth animations, interactive elements, and sections showcasing my projects, skills, and contact details.",
+        "My old portfolio website, where I showcased my full-stack (MERN) development and UI/UX design projects, skills, and contact information.",
       technologies: [
         "HTML5",
         "CSS3",
