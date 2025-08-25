@@ -8,7 +8,7 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Undergrad pursuing DevOps. It works on my machine and soon, on yours too.",
+    "Making machines learn things and servers forget how to crash.",
   summary:
     "I’m an enthusiastic IT student passionate about DevOps, cloud technologies, and AI/ML. I especially enjoy designing and automating workflows, solving technical challenges, and collaborating to build scalable, reliable systems that make an impact.",
   avatarUrl: "/me.png",
@@ -308,6 +308,74 @@ export const DATA = {
       video:
         "/sliitgpa.mov",
     },
+    // {
+    //   title: "GPA Calculator",
+    //   href: "https://automatic.chat",
+    //   dates: "April 2024 - May 2024",
+    //   active: true,
+    //   description:
+    //     "A simple, student‑friendly GPA calculator built specifically for SLIIT students to help them quickly compute their semester and cumulative GPA accurately  ",
+    //   technologies: [
+    //     "Reactjs",
+    //     "Vite",
+    //     "Typescript",
+    //     "ESLint",
+    //     "npm",
+    //     "TailwindCSS",
+    //     "Shadcn UI",
+    //     "Radix UI",
+    //     "Vercel",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://sliitgpa.vercel.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/ravindudanthanarayana/gpa",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video:
+    //     "/sliitgpa.mov",
+    // },
+    // {
+    //   title: "GPA Calculator",
+    //   href: "https://automatic.chat",
+    //   dates: "April 2024 - May 2024",
+    //   active: true,
+    //   description:
+    //     "A simple, student‑friendly GPA calculator built specifically for SLIIT students to help them quickly compute their semester and cumulative GPA accurately  ",
+    //   technologies: [
+    //     "Reactjs",
+    //     "Vite",
+    //     "Typescript",
+    //     "ESLint",
+    //     "npm",
+    //     "TailwindCSS",
+    //     "Shadcn UI",
+    //     "Radix UI",
+    //     "Vercel",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://sliitgpa.vercel.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/ravindudanthanarayana/gpa",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video:
+    //     "/sliitgpa.mov",
+    // },
   ],
   hackathons: [
     {
