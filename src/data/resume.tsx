@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Making machines learn things and servers forget how to crash.",
   summary:
-    "I’m an enthusiastic IT student passionate about DevOps, cloud technologies, and AI/ML. I especially enjoy designing and automating workflows, solving technical challenges, and collaborating to build scalable, reliable systems that make an impact.",
+    "I’m an enthusiastic IT student passionate about DevOps, cloud technologies and AI/ML. Passionate about solving technical challenges and collaborating to build scalable, reliable systems that make an impact. Also interested in AI and Machine Learning using them to create smart solutions that simplify work and improve efficiency.",
   avatarUrl: "/me.png",
   skills: [
     "Reactt",
