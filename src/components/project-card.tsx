@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -40,6 +41,51 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+
+    // Ensure mobile autoplay compatibility
+    el.muted = true;
+    el.defaultMuted = true;
+    el.playsInline = true;
+    el.setAttribute("playsinline", "");
+    el.setAttribute("webkit-playsinline", "");
+    el.setAttribute("muted", "");
+
+    const tryPlay = () => {
+      const p = el.play();
+      if (p && typeof p.then === "function") {
+        p.catch(() => {
+          // ignore autoplay rejection
+        });
+      }
+    };
+
+    // Autoplay when visible
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            tryPlay();
+          } else {
+            el.pause();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(el);
+    // Kick off an initial play attempt
+    tryPlay();
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [video]);
   return (
     <Card
       className={
@@ -52,12 +98,25 @@ export function ProjectCard({
       >
         {video && (
           <video
+            ref={videoRef}
             src={video}
             autoPlay
             loop
             muted
             playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+            preload="auto"
+            controls={false}
+            controlsList="nodownload nofullscreen noplaybackrate"
+            disablePictureInPicture
+            className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
+            onLoadedMetadata={() => {
+              const el = videoRef.current;
+              if (el) {
+                try {
+                  el.play();
+                } catch {}
+              }
+            }}
           />
         )}
         {image && (
