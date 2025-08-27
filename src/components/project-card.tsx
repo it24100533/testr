@@ -79,11 +79,30 @@ export function ProjectCard({
     );
 
     observer.observe(el);
-    // Kick off an initial play attempt
+    // Kick off initial attempts
     tryPlay();
+
+    // Fallbacks: attempt play on first user interaction and visibility changes
+    const onFirstInteract = () => {
+      tryPlay();
+      window.removeEventListener("touchstart", onFirstInteract);
+      window.removeEventListener("scroll", onFirstInteract);
+      window.removeEventListener("click", onFirstInteract);
+    };
+    const onVisibility = () => {
+      if (!document.hidden) tryPlay();
+    };
+    window.addEventListener("touchstart", onFirstInteract, { once: true });
+    window.addEventListener("scroll", onFirstInteract, { once: true });
+    window.addEventListener("click", onFirstInteract, { once: true });
+    document.addEventListener("visibilitychange", onVisibility);
 
     return () => {
       observer.disconnect();
+      window.removeEventListener("touchstart", onFirstInteract);
+      window.removeEventListener("scroll", onFirstInteract);
+      window.removeEventListener("click", onFirstInteract);
+      document.removeEventListener("visibilitychange", onVisibility);
     };
   }, [video]);
   return (
@@ -105,11 +124,28 @@ export function ProjectCard({
             muted
             playsInline
             preload="auto"
+            crossOrigin="anonymous"
             controls={false}
             controlsList="nodownload nofullscreen noplaybackrate"
             disablePictureInPicture
             className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
             onLoadedMetadata={() => {
+              const el = videoRef.current;
+              if (el) {
+                try {
+                  el.play();
+                } catch {}
+              }
+            }}
+            onLoadedData={() => {
+              const el = videoRef.current;
+              if (el) {
+                try {
+                  el.play();
+                } catch {}
+              }
+            }}
+            onCanPlay={() => {
               const el = videoRef.current;
               if (el) {
                 try {
