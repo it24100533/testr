@@ -308,74 +308,76 @@ export const DATA = {
       video:
         "/sliitgpa.mov",
     },
-    // {
-    //   title: "GPA Calculator",
-    //   href: "https://automatic.chat",
-    //   dates: "April 2024 - May 2024",
-    //   active: true,
-    //   description:
-    //     "A simple, student‑friendly GPA calculator built specifically for SLIIT students to help them quickly compute their semester and cumulative GPA accurately  ",
-    //   technologies: [
-    //     "Reactjs",
-    //     "Vite",
-    //     "Typescript",
-    //     "ESLint",
-    //     "npm",
-    //     "TailwindCSS",
-    //     "Shadcn UI",
-    //     "Radix UI",
-    //     "Vercel",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://sliitgpa.vercel.app/",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/ravindudanthanarayana/gpa",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video:
-    //     "/sliitgpa.mov",
-    // },
-    // {
-    //   title: "GPA Calculator",
-    //   href: "https://automatic.chat",
-    //   dates: "April 2024 - May 2024",
-    //   active: true,
-    //   description:
-    //     "A simple, student‑friendly GPA calculator built specifically for SLIIT students to help them quickly compute their semester and cumulative GPA accurately  ",
-    //   technologies: [
-    //     "Reactjs",
-    //     "Vite",
-    //     "Typescript",
-    //     "ESLint",
-    //     "npm",
-    //     "TailwindCSS",
-    //     "Shadcn UI",
-    //     "Radix UI",
-    //     "Vercel",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://sliitgpa.vercel.app/",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/ravindudanthanarayana/gpa",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video:
-    //     "/sliitgpa.mov",
-    // },
+//see more text
+
+    {
+      title: "project 5",
+      href: "https://automatic.chat",
+      dates: "April 2024 - May 2024",
+      active: true,
+      description:
+        "A simple, student‑friendly GPA calculator built specifically for SLIIT students to help them quickly compute their semester and cumulative GPA accurately  ",
+      technologies: [
+        "Reactjs",
+        "Vite",
+        "Typescript",
+        "ESLint",
+        "npm",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Radix UI",
+        "Vercel",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://sliitgpa.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ravindudanthanarayana/gpa",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "/sliitgpa.mov",
+    },
+    {
+      title: "project 6",
+      href: "https://automatic.chat",
+      dates: "April 2024 - May 2024",
+      active: true,
+      description:
+        "A simple, student‑friendly GPA calculator built specifically for SLIIT students to help them quickly compute their semester and cumulative GPA accurately  ",
+      technologies: [
+        "Reactjs",
+        "Vite",
+        "Typescript",
+        "ESLint",
+        "npm",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Radix UI",
+        "Vercel",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://sliitgpa.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ravindudanthanarayana/gpa",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "/sliitgpa.mov",
+    },
   ],
   hackathons: [
     {
