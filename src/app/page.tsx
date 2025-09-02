@@ -152,6 +152,18 @@ export default function Page() {
               />
             </BlurFade>
           ))}
+          <BlurFade delay={BLUR_FADE_DELAY * 12.6 + DATA.certifications.length * 0.05}>
+            <div className="w-full flex justify-center">
+              <Link
+                href="https://www.credly.com/users/ravindu-danthanarayana.2fc9c882/badges#credly"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-blue-500 hover:underline"
+              >
+                View more on Credly
+              </Link>
+            </div>
+          </BlurFade>
         </div>
       </section>
 
