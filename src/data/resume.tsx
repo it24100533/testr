@@ -245,7 +245,7 @@ export const DATA = {
     // },
     {
       title: "Portfolio Website",
-      // href: "#",
+      href: "#",
       dates: "April 2023 - September 2023",
       active: true,
       description:
@@ -276,7 +276,7 @@ export const DATA = {
     },
     {
       title: "GPA Calculator",
-      // href: "https://automatic.chat",
+      href: "#",
       dates: "April 2024 - May 2024",
       active: true,
       description:
