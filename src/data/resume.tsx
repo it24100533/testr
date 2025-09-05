@@ -255,18 +255,17 @@ export const DATA = {
         "CSS3",
         "JavaScript(Vanilla) ",
         "GSAP",
-        "AWS EC2",
-        "CloudFront",
+        "AWS S3",
       ],
       links: [
         {
           type: "Website",
-          href: "#",
+          href: "https://portfolio-0808old.s3.eu-north-1.amazonaws.com/index.html",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/ravindudanthanarayana/Portfolio-0.1",
+          href: "https://github.com/ravindudanthanarayana/portfolioweb0808",
           icon: <Icons.github className="size-3" />,
         },
       ],
