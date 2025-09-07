@@ -255,7 +255,8 @@ export const DATA = {
         "CSS3",
         "JavaScript(Vanilla) ",
         "GSAP",
-        "Amazon S3",
+        "AWS S3",
+        "AWS CloudFront",
       ],
       links: [
         {
