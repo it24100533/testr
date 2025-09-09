@@ -75,7 +75,7 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Projects I built instead of sleeping. Powered by caffeine and pure stubbornness. Dreaming in code, literally.
+                  Projects I built instead of sleeping. Powered by caffeine, fueled by curiosity, and debugged under the dim glow of midnight screens.
                 </p>
               </div>
             </div>
