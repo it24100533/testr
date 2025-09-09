@@ -107,7 +107,7 @@ export const DATA = {
     {
       school: "SLIIT",
       href: "https://www.sliit.lk/",
-      degree: "BSc (Hons) in Information Technology(UG)",
+      degree: "BSc(Hons) in Information Technology(UG)",
       logoUrl: "/sliit.svg",
       start: "2024",
       end: "2028",
