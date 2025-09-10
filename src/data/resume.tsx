@@ -139,7 +139,7 @@ export const DATA = {
   ],
   certifications: [
     {
-      name: "Microsoft Certified: Azure Fundamentals",
+      name: "Microsoft Certified: Azure Fundamentals (AZ-900)",
       issuer: "Microsoft",
       date: "2024",
       logoUrl: "/az900.svg",
