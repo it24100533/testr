@@ -159,13 +159,13 @@ export const DATA = {
       logoUrl: "/devf.svg",
       link: "https://www.credly.com/badges/1ad25bbe-fd35-4d78-9668-05d137970156"
     },
-    {
-      name: "LFS158: Introduction to Kubernetes",
-      issuer: "The Linux Foundation",
-      date: "2025",
-      logoUrl: "/kuba.svg",
-      link: "https://www.credly.com/badges/4d10da90-746c-40cc-861a-9fc40e0dadd5"
-    },
+    // {
+    //   name: "LFS158: Introduction to Kubernetes",
+    //   issuer: "The Linux Foundation",
+    //   date: "2025",
+    //   logoUrl: "/kuba.svg",
+    //   link: "https://www.credly.com/badges/4d10da90-746c-40cc-861a-9fc40e0dadd5"
+    // },
      {
       name: "GitHub Foundations",
       issuer: "Github",
