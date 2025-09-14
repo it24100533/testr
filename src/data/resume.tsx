@@ -175,11 +175,11 @@ export const DATA = {
     },
 
          {
-      name: "AWS Knowledge: Cloud Essentials",
+      name: "AWS Knowledge: Security Champion",
       issuer: "AWS",
       date: "2025",
       logoUrl: "/awsse.svg",
-      link: "https://www.credly.com/badges/f25c6389-1757-40aa-9705-4a74a43b5dfc"
+      link: "https://www.credly.com/badges/4b8d3894-941a-4b30-9c7d-11fad81f58b5"
     },
   ],
   projects: [
