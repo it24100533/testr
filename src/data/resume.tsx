@@ -141,21 +141,21 @@ export const DATA = {
     {
       name: "FinOps Certified Practitioner",
       issuer: "FinOps Foundation",
-      date: "2024",
+      date: "2025",
       logoUrl: "/finops.svg",
       link: "https://www.credly.com/badges/f0e735f3-781f-45c1-a61c-4a1336121fef"
     },
     {
       name: "Microsoft Certified: Azure Fundamentals (AZ-900)",
       issuer: "Microsoft",
-      date: "2024",
+      date: "2025",
       logoUrl: "/az900.svg",
       link: "https://learn.microsoft.com/en-us/users/ravindudanthanarayana-0163/credentials/a71bab7079e692a6?ref=https%3A%2F%2Fwww.credly.com%2F"
     },
     {
       name: "Oracle Cloud Infrastructure Certified Al Foundations Associate",
       issuer: "Oracle",
-      date: "2024",
+      date: "2025",
       logoUrl: "/ora.svg",
       link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=D4F5BB1E1E59A5BA0167C8B748AE4E4C3D6A102DC023D0CC75E1C1B989D9B082"
     },
@@ -176,7 +176,7 @@ export const DATA = {
      {
       name: "GitHub Foundations",
       issuer: "Github",
-      date: "2024",
+      date: "2025",
       logoUrl: "/gitf.svg",
       link: "https://www.credly.com/badges/9c91a2c0-c126-4c94-8893-86ac1f3654dc/linked_in_profile"
     },
