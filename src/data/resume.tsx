@@ -139,11 +139,18 @@ export const DATA = {
   ],
   certifications: [
     {
+      name: "FinOps Certified Practitioner",
+      issuer: "FinOps Foundation",
+      date: "2024",
+      logoUrl: "/finops.svg",
+      link: "https://www.credly.com/badges/f0e735f3-781f-45c1-a61c-4a1336121fef"
+    },
+    {
       name: "Microsoft Certified: Azure Fundamentals (AZ-900)",
       issuer: "Microsoft",
       date: "2024",
       logoUrl: "/az900.svg",
-      link: "#"
+      link: "https://learn.microsoft.com/en-us/users/ravindudanthanarayana-0163/credentials/a71bab7079e692a6?ref=https%3A%2F%2Fwww.credly.com%2F"
     },
     {
       name: "Oracle Cloud Infrastructure Certified Al Foundations Associate",
@@ -175,11 +182,11 @@ export const DATA = {
     },
 
          {
-      name: "AWS Knowledge: Security Champion",
+      name: "AWS Well Architected Proficient",
       issuer: "AWS",
       date: "2025",
       logoUrl: "/awsse.svg",
-      link: "https://www.credly.com/badges/4b8d3894-941a-4b30-9c7d-11fad81f58b5"
+      link: "https://www.credly.com/badges/fd7a5614-ecc7-4514-ae30-1a2e6b4aae91"
     },
   ],
   projects: [
