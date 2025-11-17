@@ -227,16 +227,16 @@ export const DATA = {
       dates: "June 2023 - Present",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "MLflow",
+        "DVC",
+        "Flask",
+        "AWS EC2",
+        "AWS ECR",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
       ],
       links: [
         {
