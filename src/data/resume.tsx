@@ -250,6 +250,126 @@ export const DATA = {
     },
 
 
+    {
+      title: "DevSecOps",
+      href: "#",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+      technologies: [
+        "MLflow",
+        "DVC",
+        "Flask",
+        "AWS EC2",
+        "AWS ECR",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ravindudanthanarayana/SentiScope",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/yttt.mov",
+    },
+
+
+
+    {
+      title: "AWS",
+      href: "#",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+      technologies: [
+        "MLflow",
+        "DVC",
+        "Flask",
+        "AWS EC2",
+        "AWS ECR",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ravindudanthanarayana/SentiScope",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/yttt.mov",
+    },
+
+
+
+    {
+      title: "11MS",
+      href: "#",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+      technologies: [
+        "MLflow",
+        "DVC",
+        "Flask",
+        "AWS EC2",
+        "AWS ECR",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ravindudanthanarayana/SentiScope",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/yttt.mov",
+    },
+
+
+
+
+    {
+      title: "Laundrify",
+      href: "#",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+      technologies: [
+        "MLflow",
+        "DVC",
+        "Flask",
+        "AWS EC2",
+        "AWS ECR",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ravindudanthanarayana/SentiScope",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/yttt.mov",
+    },
+
+
 
     {
       title: "Portfolio Website",
@@ -282,6 +402,40 @@ export const DATA = {
       video:
         "/portfolio.MOV",
     },
+
+
+
+    {
+      title: "EFK",
+      href: "#",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+      technologies: [
+        "MLflow",
+        "DVC",
+        "Flask",
+        "AWS EC2",
+        "AWS ECR",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ravindudanthanarayana/SentiScope",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/yttt.mov",
+    },
+
+
+
+
     {
       title: "GPA Calculator",
       href: "#",
