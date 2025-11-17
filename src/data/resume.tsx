@@ -457,12 +457,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://sliitgpa.vercel.app/",
+          href: "https://www.lashuraglobal.live/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/ravindudanthanarayana/gpa",
+          href: "https://github.com/ravindudanthanarayana/lash",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -470,6 +470,43 @@ export const DATA = {
       video:
         "/sliitgpa.mov",
     },
+
+
+    {
+      title: "Lashura Global",
+      href: "#",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "Startup",
+      technologies: [
+        "MLflow",
+        "DVC",
+        "Flask",
+        "AWS EC2",
+        "AWS ECR",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.lashuraglobal.live/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ravindudanthanarayana/lash",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/lash.mov",
+    },
+
+
+
 //see more text
 
     // {
