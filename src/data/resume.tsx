@@ -222,8 +222,8 @@ export const DATA = {
 
 
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
+      title: "SentiScope",
+      href: "#",
       dates: "June 2023 - Present",
       active: true,
       description:
@@ -240,13 +240,8 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/ravindudanthanarayana/SentiScope",
           icon: <Icons.github className="size-3" />,
         },
       ],
