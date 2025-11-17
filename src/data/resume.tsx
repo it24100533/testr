@@ -246,7 +246,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/yt.mov",
+      video: "/ytt.mov",
     },
 
 
