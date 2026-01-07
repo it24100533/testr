@@ -11,7 +11,7 @@ export const DATA = {
     "Helping machines learn & keeping servers steady.",
   summary:
     "I’m an enthusiastic IT student passionate about **DevOps**, **Cloud technologies** and **AI/ML**. Passionate about solving technical challenges and collaborating to build scalable, reliable systems that make an impact. Also interested in AI and Machine Learning using them to create smart solutions that simplify work and improve efficiency.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/mee.png",
   skills: [
     "Reactt",
     "Next.js",
