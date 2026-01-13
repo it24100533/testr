@@ -428,6 +428,38 @@ export const DATA = {
       video: "/yttt.mov",
     },
 
+    {
+      title: "ds",
+      href: "#",
+      dates: "April 2023 - September 2023",
+      active: true,
+      description:
+        "My old portfolio website, where I showcased my full-stack (MERN) development and UI/UX design projects, skills, and contact information.",
+      technologies: [
+        "HTML5",
+        "CSS3",
+        "JavaScript(Vanilla) ",
+        "GSAP",
+        "AWS S3",
+        "AWS CloudFront",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://portfolio-0808old.s3.eu-north-1.amazonaws.com/index.html",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ravindudanthanarayana/portfolioweb0808",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "/dscar.MOV",
+    },
+
 
     {
       title: "Portfolio Website",
