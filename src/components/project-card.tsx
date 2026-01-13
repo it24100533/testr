@@ -123,7 +123,6 @@ export function ProjectCard({
             muted
             playsInline
             preload="none"
-            loading="lazy"
             crossOrigin="anonymous"
             controls={false}
             controlsList="nodownload nofullscreen noplaybackrate"
