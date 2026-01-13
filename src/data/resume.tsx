@@ -244,7 +244,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/yttt.mov",
+      video: "/",
     },
 
     {
@@ -301,7 +301,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/yttt.mov",
+      video: "/",
     },
 
 
@@ -331,7 +331,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/yttt.mov",
+      video: "/",
     },
 
 
@@ -361,7 +361,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/yttt.mov",
+      video: "/",
     },
 
 
@@ -392,7 +392,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/yttt.mov",
+      video: "/",
     },
 
 
@@ -425,7 +425,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/yttt.mov",
+      video: "/",
     },
 
     {
