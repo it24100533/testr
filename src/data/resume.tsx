@@ -220,7 +220,7 @@ export const DATA = {
     // },
 
     {
-      title: "11MSsss",
+      title: "11MSssbs",
       href: "#",
       dates: "June 2023 - Present",
       active: true,
