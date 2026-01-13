@@ -6,6 +6,12 @@ const nextConfig = {
     unoptimized: true
   },
   basePath: '',
+  // Performance optimizations
+  compress: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
+  // Optimize production builds
+  swcMinify: true,
 };
 
 export default nextConfig;

@@ -64,23 +64,25 @@ export function ProjectCard({
       }
     };
 
-    // Autoplay when visible
+    // Load and autoplay when visible (lazy loading)
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            // Load video source when it becomes visible
+            if (el.readyState === 0) {
+              el.load();
+            }
             tryPlay();
           } else {
             el.pause();
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.1, rootMargin: '50px' }
     );
 
     observer.observe(el);
-    // Kick off initial attempts
-    tryPlay();
 
     // Fallbacks: attempt play on first user interaction and visibility changes
     const onFirstInteract = () => {
@@ -120,7 +122,8 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            preload="auto"
+            preload="none"
+            loading="lazy"
             crossOrigin="anonymous"
             controls={false}
             controlsList="nodownload nofullscreen noplaybackrate"
@@ -158,6 +161,7 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
+            loading="lazy"
             className="h-40 w-full overflow-hidden object-cover object-top"
           />
         )}
