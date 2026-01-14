@@ -472,7 +472,7 @@ export const DATA = {
       dates: "April 2024 - May 2024",
       active: true,
       description:
-        "A simple, student‑friendly GPA calculator built specifically for SLIIT students to help them quickly compute their semester and cumulative GPA accurately  ",
+        "A simple, student‑friendly GPA calculator built specifically for SLIIT students to help them quickly compute their semester and cumulative GPA accurately.",
       technologies: [
         "Reactjs",
         "Vite",
@@ -505,19 +505,16 @@ export const DATA = {
     {
       title: "Lashura Global",
       href: "#",
-      dates: "June 2023 - Present",
+      dates: "June 2023 - July 2023",
       active: true,
       description:
-        "Startup",
+        "Designed and developed Lashura Global website using component based architecture, responsive interfaces, state management, API integration, performance optimization, and engineering.",
       technologies: [
-        "MLflow",
-        "DVC",
-        "Flask",
-        "AWS EC2",
-        "AWS ECR",
-        "AWS S3",
-        "Docker",
-        "GitHub Actions",
+        "Reactjs",
+        "Redux",
+        "Threejs",
+        "Axios",
+        "Shadcn/UI",
       ],
       links: [
         {
