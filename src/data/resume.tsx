@@ -434,7 +434,7 @@ export const DATA = {
 
 
     {
-      title: "Portfolio Website",
+      title: "Old Portfolio Site",
       href: "#",
       dates: "April 2023 - September 2023",
       active: true,
