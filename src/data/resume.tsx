@@ -511,6 +511,8 @@ export const DATA = {
         "Designed and developed Lashura Global website using component based architecture, responsive interfaces, state management, API integration, performance optimization, and engineering.",
       technologies: [
         "Reactjs",
+        "Vite",
+        "Framer Motion",
         "Redux",
         "Threejs",
         "Axios",
