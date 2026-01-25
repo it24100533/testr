@@ -487,7 +487,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://www.lashuraglobal.live/",
+          href: "https://www.sliitgpa.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
