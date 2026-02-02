@@ -3,7 +3,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Ravindu Danthanarayana",
-  initials: "DV",
+  initials: "RD",
   url: "https://ravindudanthanarayana.me",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
