@@ -76,6 +76,18 @@
     }
     body {
       @apply bg-background text-foreground;
+      /* Optimize rendering performance */
+      scroll-behavior: smooth;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Image optimization for smooth loading */
+    img {
+      display: block;
+      /* Optimize image rendering */
+      image-rendering: -webkit-optimize-contrast;
     }
   }
 

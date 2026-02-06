@@ -97,12 +97,14 @@ export function VentureCard({
                     delay: idx * 0.05,
                     ease: [0.16, 1, 0.3, 1],
                   }}
-                  className="block aspect-video rounded-lg border overflow-hidden"
+                  className="block aspect-video rounded-lg border overflow-hidden bg-muted"
                 >
                   <img
                     src={src}
                     alt={`${title} showcase ${idx + 1}`}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </motion.div>
               ))}

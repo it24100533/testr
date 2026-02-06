@@ -117,12 +117,14 @@ export const ResumeCard = ({
                   {images.map((src, idx) => (
                     <div
                       key={idx}
-                      className="block aspect-video rounded-lg border overflow-hidden"
+                      className="block aspect-video rounded-lg border overflow-hidden bg-muted"
                     >
                       <img
                         src={src}
                         alt={`${title} ${idx + 1}`}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   ))}
