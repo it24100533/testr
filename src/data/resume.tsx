@@ -628,7 +628,7 @@ export const DATA = {
     {
       title: "Lashura Global Pvt(Ltd)",
       dates: "2024 – Present",
-      location: "Remote",
+      location: "Founder & CEO",
       description:
         "Built and scaled a tech startup delivering end-to-end IT solutions, including web development, software engineering, graphic design, video production, and digital marketing.",
       image:
