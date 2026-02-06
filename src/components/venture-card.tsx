@@ -88,11 +88,8 @@ export function VentureCard({
           >
             <div className="grid grid-cols-2 gap-2">
               {images!.map((src, idx) => (
-                <motion.a
+                <motion.div
                   key={idx}
-                  href={src}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   initial={{ opacity: 0, y: -8 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
@@ -100,14 +97,14 @@ export function VentureCard({
                     delay: idx * 0.05,
                     ease: [0.16, 1, 0.3, 1],
                   }}
-                  className="block aspect-video rounded-lg border overflow-hidden hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-ring"
+                  className="block aspect-video rounded-lg border overflow-hidden"
                 >
                   <img
                     src={src}
                     alt={`${title} showcase ${idx + 1}`}
                     className="w-full h-full object-cover"
                   />
-                </motion.a>
+                </motion.div>
               ))}
             </div>
           </motion.div>

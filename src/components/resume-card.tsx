@@ -115,19 +115,16 @@ export const ResumeCard = ({
               {images && images.length > 0 && (
                 <div className="grid grid-cols-2 gap-2 mt-2">
                   {images.map((src, idx) => (
-                    <a
+                    <div
                       key={idx}
-                      href={src}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block aspect-video rounded-lg border overflow-hidden hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-ring"
+                      className="block aspect-video rounded-lg border overflow-hidden"
                     >
                       <img
                         src={src}
                         alt={`${title} ${idx + 1}`}
                         className="w-full h-full object-cover"
                       />
-                    </a>
+                    </div>
                   ))}
                 </div>
               )}
