@@ -88,6 +88,11 @@ export const DATA = {
       end: "Dec 2024",
       description:
         "Worked on end to end web development projects, combining UI/UX design expertise with WordPress and MERN stack development. Designed intuitive and user friendly interfaces, implemented responsive layouts and developed full stack solutions that integrated frontend and backend functionality. Collaborated closely with clients to deliver high quality, scalable web applications tailored to their requirements.",
+      images: [
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
+        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop",
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop",
+      ],
     },
     // {
     //   company: "Lashura Global",
@@ -111,6 +116,10 @@ export const DATA = {
       logoUrl: "/sliit.svg",
       start: "2024",
       end: "2028",
+      images: [
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop",
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=250&fit=crop",
+      ],
     },
     // {
     //   school: "University of Moratuwa",
@@ -135,6 +144,10 @@ export const DATA = {
       logoUrl: "/drck.svg",
       start: "2010",
       end: "2023",
+      images: [
+        "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=250&fit=crop",
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop",
+      ],
     },
   ],
   certifications: [
@@ -607,16 +620,35 @@ export const DATA = {
     //     "/sliitgpa.mov",
     // },
   ],
-  hackathons: [
+  ventures: [
     {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
+      title: "Nexus Labs",
+      dates: "2021 – Present",
+      location: "Remote",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Co-founded a B2B SaaS startup building developer tools for cloud-native workflows. Led product and engineering; grew to first paying customers.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=200&h=200&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop",
+        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop",
+      ],
+      links: [],
+    },
+    {
+      title: "FlowStack",
+      dates: "2019 – 2021",
+      location: "Toronto, Ontario",
+      description:
+        "Early-stage startup focused on workflow automation for SMBs. Built the MVP and core integrations; participated in a local accelerator.",
+      image:
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=200&h=200&fit=crop",
+      images: [
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
+        "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=250&fit=crop",
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop",
+      ],
       links: [],
     },
   ],

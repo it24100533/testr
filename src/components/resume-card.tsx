@@ -6,7 +6,6 @@ import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 
 interface ResumeCardProps {
@@ -18,6 +17,7 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  images?: readonly string[];
 }
 export const ResumeCard = ({
   logoUrl,
@@ -28,21 +28,31 @@ export const ResumeCard = ({
   badges,
   period,
   description,
+  images,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
+  const hasExpandable = (description?.length ?? 0) > 0 || (images?.length ?? 0) > 0;
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (description) {
-      e.preventDefault();
+  const handleClick = () => {
+    if (hasExpandable) {
       setIsExpanded(!isExpanded);
+    } else if (href) {
+      window.location.href = href;
     }
   };
 
   return (
-    <Link
-      href={href || "#"}
+    <div
       className="block cursor-pointer"
       onClick={handleClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleClick();
+        }
+      }}
     >
       <Card className="flex">
         <div className="flex-none">
@@ -86,25 +96,45 @@ export const ResumeCard = ({
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
           </CardHeader>
-          {description && (
+          {(description || (images && images.length > 0)) && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 overflow-hidden"
             >
-              {description}
+              {description && (
+                <p className="text-xs sm:text-sm mb-3">{description}</p>
+              )}
+              {images && images.length > 0 && (
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  {images.map((src, idx) => (
+                    <a
+                      key={idx}
+                      href={src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block aspect-video rounded-lg border overflow-hidden hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-ring"
+                    >
+                      <img
+                        src={src}
+                        alt={`${title} ${idx + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </a>
+                  ))}
+                </div>
+              )}
             </motion.div>
           )}
         </div>
       </Card>
-    </Link>
+    </div>
   );
 };
