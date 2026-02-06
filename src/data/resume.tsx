@@ -78,20 +78,20 @@ export const DATA = {
 
   work: [
     {
-      company: "E media solutions pvt Ltd",
+      company: "CoDeKu Labs",
       href: "https://atomic.finance",
       badges: [],
       location: "Remote",
-      title: "Full Stack Developer",
-      logoUrl: "/emedia.png",
+      title: "Creative Designer",
+      logoUrl: "/codeku.png",
       start: "Jun 2024",
       end: "Dec 2024",
       description:
-        "Worked on end to end web development projects, combining UI/UX design expertise with WordPress and MERN stack development. Designed intuitive and user friendly interfaces, implemented responsive layouts and developed full stack solutions that integrated frontend and backend functionality. Collaborated closely with clients to deliver high quality, scalable web applications tailored to their requirements.",
+        "Designed architecture diagrams, workflows, and visual representations of cloud and DevOps systems for educational content. Created engaging graphics and visuals to simplify complex technical concepts for a wide audience. Collaborated with content creators to ensure accurate and visually appealing representations of cloud infrastructure, DevOps processes, and AI/ML workflows.",
       images: [
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
-        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop",
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop",
+        "/code1.png",
+        "/code2.jpg",
+  
       ],
     },
     // {
@@ -117,8 +117,8 @@ export const DATA = {
       start: "2024",
       end: "2028",
       images: [
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop",
-        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=250&fit=crop",
+        "/sliit1.jpg",
+        "/sliit2.jpg",
       ],
     },
     // {
@@ -145,8 +145,10 @@ export const DATA = {
       start: "2010",
       end: "2023",
       images: [
-        "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=250&fit=crop",
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop",
+        "/drc1.jpg",
+        "/drc2.jpg",
+        "/drc3.jpg",
+        "/drc4.jpg",
       ],
     },
   ],
@@ -622,34 +624,17 @@ export const DATA = {
   ],
   ventures: [
     {
-      title: "Nexus Labs",
-      dates: "2021 – Present",
+      title: "Lashura Global Pvt(Ltd)",
+      dates: "2024 – Present",
       location: "Remote",
       description:
-        "Co-founded a B2B SaaS startup building developer tools for cloud-native workflows. Led product and engineering; grew to first paying customers.",
+        "Built and scaled a tech startup delivering end-to-end IT solutions, including web development, software engineering, graphic design, video production, and digital marketing.",
       image:
-        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=200&h=200&fit=crop",
+        "/lashlogo.png",
       images: [
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop",
-        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop",
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop",
+        "/112.png"
       ],
       links: [],
-    },
-    {
-      title: "FlowStack",
-      dates: "2019 – 2021",
-      location: "Toronto, Ontario",
-      description:
-        "Early-stage startup focused on workflow automation for SMBs. Built the MVP and core integrations; participated in a local accelerator.",
-      image:
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=200&h=200&fit=crop",
-      images: [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
-        "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=250&fit=crop",
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop",
-      ],
-      links: [],
-    },
+    }
   ],
 } as const;
