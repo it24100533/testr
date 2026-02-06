@@ -31,6 +31,7 @@ export const ResumeCard = ({
   images,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
+  const [failedImages, setFailedImages] = React.useState<Set<string>>(new Set());
   const hasExpandable = (description?.length ?? 0) > 0 || (images?.length ?? 0) > 0;
 
   const handleClick = () => {
@@ -39,6 +40,10 @@ export const ResumeCard = ({
     } else if (href) {
       window.location.href = href;
     }
+  };
+
+  const handleImageError = (src: string) => {
+    setFailedImages(prev => new Set(prev).add(src));
   };
 
   return (
@@ -115,18 +120,21 @@ export const ResumeCard = ({
               {images && images.length > 0 && (
                 <div className="grid grid-cols-2 gap-2 mt-2">
                   {images.map((src, idx) => (
-                    <div
-                      key={idx}
-                      className="block aspect-video rounded-lg border overflow-hidden bg-muted"
-                    >
-                      <img
-                        src={src}
-                        alt={`${title} ${idx + 1}`}
-                        className="w-full h-full object-cover"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
+                    !failedImages.has(src) && (
+                      <div
+                        key={idx}
+                        className="block aspect-video rounded-lg border overflow-hidden bg-muted relative"
+                      >
+                        <img
+                          src={src}
+                          alt={`${title} ${idx + 1}`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                          decoding="async"
+                          onError={() => handleImageError(src)}
+                        />
+                      </div>
+                    )
                   ))}
                 </div>
               )}

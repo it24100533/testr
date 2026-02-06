@@ -31,7 +31,12 @@ export function VentureCard({
   links,
 }: Props) {
   const [showImages, setShowImages] = useState(false);
+  const [failedImages, setFailedImages] = useState<Set<string>>(new Set());
   const hasImages = images && images.length > 0;
+
+  const handleImageError = (src: string) => {
+    setFailedImages(prev => new Set(prev).add(src));
+  };
 
   return (
     <li className="relative ml-10 py-4">
@@ -88,25 +93,28 @@ export function VentureCard({
           >
             <div className="grid grid-cols-2 gap-2">
               {images!.map((src, idx) => (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, y: -8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.3,
-                    delay: idx * 0.05,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                  className="block aspect-video rounded-lg border overflow-hidden bg-muted"
-                >
-                  <img
-                    src={src}
-                    alt={`${title} showcase ${idx + 1}`}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </motion.div>
+                !failedImages.has(src) && (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: idx * 0.05,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
+                    className="block aspect-video rounded-lg border overflow-hidden bg-muted"
+                  >
+                    <img
+                      src={src}
+                      alt={`${title} showcase ${idx + 1}`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
+                      onError={() => handleImageError(src)}
+                    />
+                  </motion.div>
+                )
               ))}
             </div>
           </motion.div>
