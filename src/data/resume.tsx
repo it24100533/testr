@@ -149,6 +149,8 @@ export const DATA = {
         "/drc2.jpg",
         "/drc3.JPG",
         "/drc4.jpg",
+         "/drc5.jpg",
+          "/drc6.jpg",
       ],
     },
   ],
