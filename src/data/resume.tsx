@@ -632,7 +632,7 @@ export const DATA = {
       image:
         "/lashlogo.png",
       images: [
-        "/112.png"
+        "/112.PNG"
       ],
       links: [],
     }
