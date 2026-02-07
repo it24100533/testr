@@ -4,11 +4,8 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const IMAGES = [
-  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop",
-  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop",
-  "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop",
-  "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
-  "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop",
+  "/koo1.png",
+  "koo2.png",
 ];
 
 const container = {
