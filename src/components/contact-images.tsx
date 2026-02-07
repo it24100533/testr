@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const IMAGES = [
   "/koo1.png",
-  "koo2.png",
+  "/koo2.png",
 ];
 
 const container = {
