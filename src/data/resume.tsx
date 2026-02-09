@@ -356,33 +356,33 @@ export const DATA = {
     
 
 
-    {
-      title: "Laundrify",
-      href: "#",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
-      technologies: [
-        "MLflow",
-        "DVC",
-        "Flask",
-        "AWS EC2",
-        "AWS ECR",
-        "AWS S3",
-        "Docker",
-        "GitHub Actions",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/ravindudanthanarayana/SentiScope",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/",
-    },
+    // {
+    //   title: "Laundrify",
+    //   href: "#",
+    //   dates: "June 2023 - Present",
+    //   active: true,
+    //   description:
+    //     "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+    //   technologies: [
+    //     "MLflow",
+    //     "DVC",
+    //     "Flask",
+    //     "AWS EC2",
+    //     "AWS ECR",
+    //     "AWS S3",
+    //     "Docker",
+    //     "GitHub Actions",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/ravindudanthanarayana/SentiScope",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "/",
+    // },
 
 
 
@@ -519,37 +519,37 @@ export const DATA = {
     },
 
 
-    {
-      title: "Lashura Global",
-      href: "#",
-      dates: "June 2023 - July 2023",
-      active: true,
-      description:
-        "Designed and developed Lashura Global website using component based architecture, responsive interfaces, state management, API integration, performance optimization, and engineering.",
-      technologies: [
-        "Reactjs",
-        "Vite",
-        "Framer Motion",
-        "Redux",
-        "Threejs",
-        "Axios",
-        "Shadcn/UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://www.lashuraglobal.live/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ravindudanthanarayana/lash",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/lash.mov",
-    },
+    // {
+    //   title: "Lashura Global",
+    //   href: "#",
+    //   dates: "June 2023 - July 2023",
+    //   active: true,
+    //   description:
+    //     "Designed and developed Lashura Global website using component based architecture, responsive interfaces, state management, API integration, performance optimization, and engineering.",
+    //   technologies: [
+    //     "Reactjs",
+    //     "Vite",
+    //     "Framer Motion",
+    //     "Redux",
+    //     "Threejs",
+    //     "Axios",
+    //     "Shadcn/UI",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://www.lashuraglobal.live/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/ravindudanthanarayana/lash",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "/lash.mov",
+    // },
 
 
 
