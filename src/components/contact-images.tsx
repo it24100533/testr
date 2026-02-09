@@ -9,7 +9,7 @@ const IMAGES = [
   "/koo3.jpg",
   "/koo4.jpg",
   "/koo5.jpg",
-  "/koo6.jpg"
+  "/koo6a.JPG"
 ];
 
 const container = {
