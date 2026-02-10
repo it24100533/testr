@@ -8,7 +8,7 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Helping machines learn & keeping servers steady.",
+    "Helping machines learn & keeping servers steady | Delivering scalable, reliable systems that drive real business impact",
   summary:
     "I’m an enthusiastic IT student passionate about **DevOps**, **Cloud technologies** and **AI/ML**. Passionate about solving technical challenges and collaborating to build scalable, reliable systems that make an impact. Also interested in AI and Machine Learning using them to create smart solutions that simplify work and improve efficiency.",
   avatarUrl: "/mee1.png",
