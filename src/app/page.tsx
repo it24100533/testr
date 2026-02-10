@@ -61,7 +61,7 @@ export default function Page() {
           <div className="flex flex-wrap gap-1">
             {["Linux", "Docker", "Kubernetes", "Git/GitHub", "Jenkins", "AWS","Azure","GCP", "TensorFlow", "Python", "Java", "SQL", "scikit-learn","Jira","Openstack","Openshift","React"].map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+                <Badge key={skill} variant="blue">{skill}</Badge>
               </BlurFade>
             ))}
           </div>

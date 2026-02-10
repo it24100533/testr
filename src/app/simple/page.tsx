@@ -32,7 +32,7 @@ export default function SimplePage() {
         <h2 className="text-xl font-bold">Skills</h2>
         <div className="flex flex-wrap gap-1">
           {["Linux", "Docker", "Kubernetes", "Git/GitHub", "Jenkins", "AWS", "Azure", "GCP", "TensorFlow", "Python", "Java", "SQL", "scikit-learn", "Jira", "Openstack", "Openshift"].map((skill) => (
-            <span key={skill} className="px-2 py-1 bg-gray-100 rounded text-sm">
+            <span key={skill} className="px-2 py-1 bg-blue-500 text-white rounded text-sm">
               {skill}
             </span>
           ))}
