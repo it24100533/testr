@@ -24,8 +24,9 @@ export default function Navbar() {
                   href={item.href}
                   className={cn(
                     buttonVariants({ variant: "ghost", size: "icon" }),
-                    "size-12"
+                    "size-12 transition-transform duration-200 ease-out hover:scale-110"
                   )}
+                  aria-label={item.label}
                 >
                   <item.icon className="size-4" />
                 </Link>
@@ -47,8 +48,9 @@ export default function Navbar() {
                     href={social.url}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12"
+                      "size-12 transition-transform duration-200 ease-out hover:scale-110"
                     )}
+                    aria-label={name}
                   >
                     <social.icon className="size-4" />
                   </Link>

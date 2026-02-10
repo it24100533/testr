@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, memo } from "react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -29,7 +29,7 @@ interface Props {
   className?: string;
 }
 
-export function ProjectCard({
+export function ProjectCardComponent({
   title,
   href,
   description,
@@ -122,7 +122,7 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            preload="none"
+            preload="metadata"
             crossOrigin="anonymous"
             controls={false}
             controlsList="nodownload nofullscreen noplaybackrate"
@@ -132,7 +132,7 @@ export function ProjectCard({
               const el = videoRef.current;
               if (el) {
                 try {
-                  el.play();
+                  el.play().catch(() => {});
                 } catch {}
               }
             }}
@@ -140,7 +140,7 @@ export function ProjectCard({
               const el = videoRef.current;
               if (el) {
                 try {
-                  el.play();
+                  el.play().catch(() => {});
                 } catch {}
               }
             }}
@@ -148,7 +148,7 @@ export function ProjectCard({
               const el = videoRef.current;
               if (el) {
                 try {
-                  el.play();
+                  el.play().catch(() => {});
                 } catch {}
               }
             }}
@@ -157,11 +157,13 @@ export function ProjectCard({
         {image && (
           <Image
             src={image}
-            alt={title}
+            alt={`${title} project showcase image`}
             width={500}
             height={300}
             loading="lazy"
             className="h-40 w-full overflow-hidden object-cover object-top"
+            quality={85}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         )}
       </div>
@@ -209,3 +211,5 @@ export function ProjectCard({
     </Card>
   );
 }
+
+export const ProjectCard = memo(ProjectCardComponent);

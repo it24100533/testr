@@ -45,6 +45,9 @@ const BlurFade = ({
 
   const motionVariants = variant || defaultVariants;
 
+  // Reduce motion for accessibility
+  const prefersReducedMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   return (
     <motion.div
       ref={inViewRef}
@@ -52,7 +55,14 @@ const BlurFade = ({
       variants={motionVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      transition={{ duration, delay }}
+      transition={{
+        duration: prefersReducedMotion ? 0.1 : duration,
+        delay: prefersReducedMotion ? 0 : delay,
+        type: "spring",
+        stiffness: 100,
+        damping: 30,
+      }}
+      style={isInView ? { willChange: "auto" } : { willChange: "transform, opacity, filter" }}
     >
       {children}
     </motion.div>

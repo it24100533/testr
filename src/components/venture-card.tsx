@@ -43,8 +43,8 @@ export function VentureCard({
     <li className="relative ml-10 py-4">
       <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
         <Avatar className="border size-12 m-auto">
-          <AvatarImage src={image} alt={title} className="object-contain" />
-          <AvatarFallback>{title[0]}</AvatarFallback>
+          <AvatarImage src={image} alt={`${title} logo`} className="object-contain" />
+          <AvatarFallback aria-label={title}>{title[0]}</AvatarFallback>
         </Avatar>
       </div>
       <div className="flex flex-1 flex-col justify-start gap-1">
@@ -54,13 +54,20 @@ export function VentureCard({
         <button
           type="button"
           onClick={() => hasImages && setShowImages((prev) => !prev)}
+          onKeyDown={(e) => {
+            if (hasImages && (e.key === 'Enter' || e.key === ' ')) {
+              e.preventDefault();
+              setShowImages((prev) => !prev);
+            }
+          }}
           className={`inline-flex items-center gap-1.5 font-semibold leading-none text-left -ml-1 rounded px-1 group ${
             hasImages
-              ? "cursor-pointer focus:outline-none"
+              ? "cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary"
               : ""
           }`}
           aria-expanded={showImages}
           aria-controls={`${title}-images`}
+          aria-label={hasImages ? `Toggle ${title} images` : title}
         >
           {title}
           {hasImages && (
@@ -104,10 +111,12 @@ export function VentureCard({
                       ease: [0.16, 1, 0.3, 1],
                     }}
                     className="block aspect-video rounded-lg border overflow-hidden bg-muted"
+                    role="img"
+                    aria-label={`${title} image ${idx + 1}`}
                   >
                     <img
                       src={src}
-                      alt={`${title} showcase ${idx + 1}`}
+                      alt={`${title} portfolio image ${idx + 1}`}
                       className="w-full h-full object-cover"
                       loading="lazy"
                       decoding="async"

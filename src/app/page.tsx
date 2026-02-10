@@ -33,8 +33,11 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
+                <AvatarImage 
+                  alt={`${DATA.name} - Portfolio`} 
+                  src={DATA.avatarUrl}
+                />
+                <AvatarFallback aria-label={DATA.name}>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>

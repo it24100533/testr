@@ -3,8 +3,16 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  colorScheme: "light dark",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
@@ -13,48 +21,24 @@ export const metadata: Metadata = {
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
+  keywords: ["Portfolio", "DevOps", "Cloud", "AI/ML", "Full Stack Developer"],
+  authors: [{ name: DATA.name }],
+  creator: DATA.name,
+  publisher: DATA.name,
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   other: {
     "msapplication-TileColor": "#000000",
     "msapplication-TileImage": "favicon.png",
   },
   icons: {
-    icon: [
-      {
-        url: "favicon.png",
-        sizes: "any",
-        type: "image/png",
-      },
-      {
-        url: "favicon.png",
-        sizes: "16x16",
-        type: "image/png",
-      },
-      {
-        url: "favicon.png",
-        sizes: "32x32",
-        type: "image/png",
-      },
-      {
-        url: "favicon.png",
-        sizes: "48x48",
-        type: "image/png",
-      },
-      {
-        url: "favicon.png",
-        sizes: "96x96",
-        type: "image/png",
-      },
-      {
-        url: "favicon.png",
-        sizes: "192x192",
-        type: "image/png",
-      },
-      {
-        url: "favicon.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
-    ],
+    icon: {
+      url: "favicon.png",
+      type: "image/png",
+    },
     shortcut: "favicon.png",
     apple: "favicon.png",
   },
@@ -95,15 +79,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" type="image/png" href="favicon.png" />
-        <link rel="icon" href="favicon.png" type="image/png" />
-        <link rel="icon" href="favicon.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16" />
-        <link rel="shortcut icon" href="favicon.png" />
-        <link rel="apple-touch-icon" href="favicon.png" />
-        <link rel="icon" href="favicon.png" type="image/x-icon" />
-        <meta name="msapplication-TileImage" content="favicon.png" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="msapplication-TileImage" content="favicon.png" />
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
       </head>
       <body
         className="min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-8 sm:py-16 px-6"

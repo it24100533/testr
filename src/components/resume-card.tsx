@@ -59,10 +59,10 @@ export const ResumeCard = ({
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
-              alt={altText}
+              alt={`${altText} logo`}
               className="object-contain"
             />
-            <AvatarFallback>{altText[0]}</AvatarFallback>
+            <AvatarFallback aria-label={altText}>{altText[0]}</AvatarFallback>
           </Avatar>
         </div>
         <div className="flex-grow ml-4 items-center flex-col group">
@@ -118,10 +118,12 @@ export const ResumeCard = ({
                     <div
                       key={idx}
                       className="block aspect-video rounded-lg border overflow-hidden bg-muted"
+                      role="img"
+                      aria-label={`${title} image ${idx + 1} of ${images.length}`}
                     >
                       <img
                         src={src}
-                        alt={`${title} ${idx + 1}`}
+                        alt={`${title} showcase image ${idx + 1}`}
                         className="w-full h-full object-cover"
                         loading="lazy"
                         decoding="async"
