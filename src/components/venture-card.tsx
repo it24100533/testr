@@ -4,8 +4,9 @@ import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 interface Props {
   title: string;
@@ -53,9 +54,9 @@ export function VentureCard({
         <button
           type="button"
           onClick={() => hasImages && setShowImages((prev) => !prev)}
-          className={`inline-flex items-center gap-1.5 font-semibold leading-none text-left -ml-1 rounded px-1 ${
+          className={`inline-flex items-center gap-1.5 font-semibold leading-none text-left -ml-1 rounded px-1 group ${
             hasImages
-              ? "cursor-pointer hover:bg-muted/50 focus:outline-none"
+              ? "cursor-pointer focus:outline-none"
               : ""
           }`}
           aria-expanded={showImages}
@@ -63,13 +64,12 @@ export function VentureCard({
         >
           {title}
           {hasImages && (
-            <motion.span
-              animate={{ rotate: showImages ? 180 : 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 24 }}
-              className="inline-flex text-muted-foreground"
-            >
-              <ChevronDown className="size-4" />
-            </motion.span>
+            <ChevronRight
+              className={cn(
+                "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
+                showImages ? "rotate-90" : "rotate-0"
+              )}
+            />
           )}
         </button>
         {location && (
