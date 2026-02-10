@@ -58,11 +58,10 @@ export function ProjectsGrid({
       </div>
       {!showAll && projects.length > initialVisibleCount ? (
         <BlurFade delay={animationDelay * 8 + visibleProjects.length * 0.05}>
-          <div className="w-full flex justify-center pt-4">
+          <div className="w-full flex justify-center">
             <button
               type="button"
-              aria-label={`Show all ${projects.length} projects`}
-              className="px-4 py-2 text-sm font-medium text-primary hover:text-primary/80 active:text-primary/60 transition-colors duration-200 underline underline-offset-4 hover:no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary rounded"
+              className="text-sm text-blue-500 hover:underline"
               onClick={() => setShowAll(true)}
             >
               See more projects
