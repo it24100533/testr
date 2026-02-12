@@ -240,14 +240,23 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Have a question? Drop me a DM on{" "}
+                Hiring or collaboration in mind?{" "}
                 <Link
                   href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
                 >
-                  LinkedIn
+                  Connect on LinkedIn
                 </Link>
-                , I&apos;ll get back to you faster than an automated test run!
+                .<br />
+                Need a quick response?{" "}
+                <Link
+                  href="https://wa.me/94773431431"
+                  className="text-green-500 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  DM me on WhatsApp.
+                </Link>
               </p>
             </div>
           </BlurFade>
