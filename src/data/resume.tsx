@@ -294,7 +294,7 @@ export const DATA = {
 
 
     {
-      title: "DevSecOps",
+      title: "DevSecOpsss",
       href: "#",
       dates: "June 2023 - Present",
       active: true,
