@@ -145,12 +145,13 @@ export const DATA = {
       start: "2010",
       end: "2023",
       images: [
-        "/drc1.jpg",
+          "/drc7.jpg",
         "/drc2.jpg",
-        "/drc3.JPG",
         "/drc4.jpg",
+           "/drc1.jpg",
          "/drc5.jpg",
           "/drc6.jpg",
+          "/drc3.JPG"
       ],
     },
   ],
