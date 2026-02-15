@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { motion, AnimatePresence } from "framer-motion";
@@ -22,7 +22,7 @@ interface Props {
   }[];
 }
 
-export function VentureCard({
+function VentureCardComponent({
   title,
   description,
   dates,
@@ -144,3 +144,5 @@ export function VentureCard({
     </li>
   );
 }
+
+export const VentureCard = React.memo(VentureCardComponent);

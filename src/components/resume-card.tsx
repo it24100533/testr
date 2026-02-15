@@ -19,7 +19,7 @@ interface ResumeCardProps {
   description?: string;
   images?: readonly string[];
 }
-export const ResumeCard = ({
+const ResumeCardComponent = ({
   logoUrl,
   altText,
   title,
@@ -139,3 +139,5 @@ export const ResumeCard = ({
     </div>
   );
 };
+
+export const ResumeCard = React.memo(ResumeCardComponent);
