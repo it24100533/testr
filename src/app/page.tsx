@@ -7,7 +7,9 @@ import { ProjectsGrid } from "@/components/projects-grid";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
+import { Download } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -16,9 +18,9 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10">
+    <main className="flex flex-col min-h-[100dvh] space-y-6 sm:space-y-10 pb-20 sm:pb-8">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
+        <div className="mx-auto w-full max-w-2xl space-y-5 sm:space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
@@ -30,6 +32,14 @@ export default function Page() {
                 className="max-w-[600px] md:text-xl"
                 text={DATA.description}
               />
+              <BlurFade delay={BLUR_FADE_DELAY * 2}>
+                <Button asChild variant="outline" size="default" className="mt-4 gap-2 hover:translate-y-0 active:scale-100">
+                  <a href={DATA.cvUrl} download>
+                    <Download className="size-4" aria-hidden />
+                    Download CV
+                  </a>
+                </Button>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
@@ -68,11 +78,11 @@ export default function Page() {
         </div>
       </section>
       <section id="projects">
-        <div className="space-y-12 w-full py-12">
+        <div className="space-y-6 sm:space-y-12 w-full py-6 sm:py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                <div className="inline-block rounded-[var(--radius)] bg-foreground text-background px-3 py-1 text-sm shadow-[0_1px_2px_rgba(0,0,0,0.08)]">
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -185,11 +195,11 @@ export default function Page() {
       
 
       <section id="ventures">
-        <div className="space-y-12 w-full py-12 pb-4">
+        <div className="space-y-6 sm:space-y-12 w-full py-6 sm:py-12 pb-0 sm:pb-4">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                <div className="inline-block rounded-[var(--radius)] bg-foreground text-background px-3 py-1 text-sm shadow-[0_1px_2px_rgba(0,0,0,0.08)]">
                   Ventures
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -207,7 +217,7 @@ export default function Page() {
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+            <ul className="mb-4 ml-4 divide-y divide-dashed">
               {DATA.ventures.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
@@ -229,11 +239,11 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="contact" className="overflow-x-hidden">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full max-w-full py-12">
+      <section id="contact" className="overflow-x-hidden -mt-2 sm:mt-0">
+        <div className="grid items-center justify-center gap-3 sm:gap-4 px-4 text-center md:px-6 w-full max-w-full pt-2 pb-6 sm:py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+              <div className="inline-block rounded-[var(--radius)] bg-foreground text-background px-3 py-1 text-sm shadow-[0_1px_2px_rgba(0,0,0,0.08)]">
                 Contact
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">

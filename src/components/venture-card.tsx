@@ -41,8 +41,8 @@ export function VentureCard({
 
   return (
     <li className="relative ml-10 py-4">
-      <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
-        <Avatar className="border size-12 m-auto">
+      <div className="absolute -left-16 top-2 flex items-center justify-center rounded-full border border-[var(--glass-border)] bg-[var(--glass-bg)] shadow-[var(--glass-shadow)]">
+        <Avatar className="border border-[var(--glass-border)] size-12 m-auto">
           <AvatarImage src={image} alt={`${title} logo`} className="object-contain" />
           <AvatarFallback aria-label={title}>{title[0]}</AvatarFallback>
         </Avatar>
@@ -110,7 +110,7 @@ export function VentureCard({
                       delay: idx * 0.05,
                       ease: [0.16, 1, 0.3, 1],
                     }}
-                    className="block aspect-video rounded-lg border overflow-hidden bg-muted w-full"
+                    className="block aspect-video rounded-[var(--radius)] border border-[var(--glass-border)] overflow-hidden bg-muted/50 w-full"
                     role="img"
                     aria-label={`${title} image ${idx + 1}`}
                   >

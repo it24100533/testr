@@ -46,9 +46,9 @@ export function ContactImages() {
       variants={container}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      className="mx-auto mt-12 w-full max-w-4xl px-4 min-w-0 overflow-x-hidden"
+      className="mx-auto mt-4 sm:mt-12 w-full max-w-4xl px-4 min-w-0 overflow-x-hidden"
     >
-      <div className="grid grid-cols-2 gap-4 w-full min-w-0">
+      <div className="grid grid-cols-2 gap-2 sm:gap-4 w-full min-w-0">
         {IMAGES.map((src, idx) => (
           <motion.div
             key={idx}
@@ -58,7 +58,7 @@ export function ContactImages() {
             <motion.div
               whileHover={{ scale: 1.03, y: -4 }}
               transition={{ type: "spring", stiffness: 400, damping: 20 }}
-              className="overflow-hidden rounded-2xl border border-border/60 bg-muted/30 shadow-lg ring-1 ring-black/5 transition-shadow duration-300 group-hover:shadow-xl group-hover:ring-primary/20 dark:ring-white/5 dark:group-hover:ring-primary/30 aspect-video"
+              className="overflow-hidden rounded-[var(--radius)] border border-[var(--glass-border)] bg-[var(--glass-bg)] shadow-[var(--glass-shadow)] transition-all duration-smooth group-hover:shadow-[0_12px_40px_rgba(0,0,0,0.12)] group-hover:-translate-y-1 aspect-video"
             >
               <img
                 src={src}

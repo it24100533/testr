@@ -74,6 +74,14 @@ const config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        xl: "calc(var(--radius) + 4px)",
+      },
+      transitionDuration: {
+        smooth: "300ms",
+      },
+      boxShadow: {
+        glass: "var(--glass-shadow)",
+        "glass-inset": "var(--glass-highlight)",
       },
       keyframes: {
         "accordion-down": {

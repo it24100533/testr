@@ -54,9 +54,9 @@ export const ResumeCard = ({
         }
       }}
     >
-      <Card className="flex hover:bg-transparent">
+      <Card className="flex border-0 bg-transparent rounded-none hover:bg-transparent [box-shadow:none] [backdrop-filter:none]">
         <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+          <Avatar className="border size-12 m-auto bg-muted">
             <AvatarImage
               src={logoUrl}
               alt={`${altText} logo`}

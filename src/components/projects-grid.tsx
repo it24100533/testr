@@ -39,7 +39,7 @@ export function ProjectsGrid({
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+      <div className="grid grid-cols-2 gap-2 sm:gap-3 max-w-[800px] mx-auto">
         {visibleProjects.map((project, id) => (
           <BlurFade key={project.title} delay={animationDelay * 8 + id * 0.05}>
             <ProjectCard
@@ -61,7 +61,7 @@ export function ProjectsGrid({
           <div className="w-full flex justify-center">
             <button
               type="button"
-              className="text-sm text-blue-500 hover:underline"
+              className="text-sm text-blue-500 hover:underline rounded-[var(--radius)] px-3 py-1.5 transition-colors duration-smooth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               onClick={() => setShowAll(true)}
             >
               See more projects

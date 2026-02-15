@@ -110,10 +110,10 @@ export function ProjectCardComponent({
   return (
     <Card
       className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
+        "flex flex-col overflow-hidden border h-full"
       }
     >
-      <div className={cn("block", className)}>
+      <div className={cn("block aspect-video w-full overflow-hidden", className)}>
         {video && (
           <video
             ref={videoRef}
@@ -127,7 +127,7 @@ export function ProjectCardComponent({
             controls={false}
             controlsList="nodownload nofullscreen noplaybackrate"
             disablePictureInPicture
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
+            className="pointer-events-none mx-auto h-full w-full object-cover object-top"
             onLoadedMetadata={() => {
               const el = videoRef.current;
               if (el) {
@@ -159,11 +159,11 @@ export function ProjectCardComponent({
             src={image}
             alt={`${title} project showcase image`}
             width={500}
-            height={300}
+            height={281}
             loading="lazy"
-            className="h-40 w-full overflow-hidden object-cover object-top"
+            className="h-full w-full overflow-hidden object-cover object-top"
             quality={85}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 640px) 50vw, (max-width: 1200px) 50vw, 33vw"
           />
         )}
       </div>
