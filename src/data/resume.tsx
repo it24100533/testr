@@ -146,7 +146,6 @@ export const DATA = {
       start: "2010",
       end: "2023",
       images: [
-          "/drc7.jpg",
         "/drc2.jpg",
         "/drc4.jpg",
            "/drc1.jpg",
