@@ -191,8 +191,8 @@ export default function HomeBelowFold() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  WhatsApp.
-                </Link>
+                  WhatsApp
+                </Link>.
               </p>
             </div>
           </BlurFade>
