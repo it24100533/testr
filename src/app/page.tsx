@@ -79,6 +79,7 @@ export default function Page() {
               "Terraform",
               "Ansible",
               "FinOps Concepts",
+              "Azure",
               "AWS (EC2, S3, IAM)",
               "ML lifecycle understanding",
               "MLflow",
