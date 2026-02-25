@@ -31,11 +31,40 @@ export default function SimplePage() {
       <section id="skills">
         <h2 className="text-xl font-bold">Skills</h2>
         <div className="flex flex-wrap gap-1">
-          {["Linux", "Docker", "Kubernetes", "Git/GitHub", "Jenkins", "AWS", "Azure", "GCP", "TensorFlow", "Python", "Java", "SQL", "scikit-learn", "Jira", "Openstack", "Openshift"].map((skill) => (
+          {[
+            "Linux administration",
+            "Bash",
+            "Python",
+            "Git",
+            "GitHub",
+            "CI/CD",
+            "Jenkins",
+            "Docker",
+            "Kubernetes",
+            "Terraform",
+            "Ansible",
+            "AWS (EC2, S3, IAM)",
+            "ML lifecycle understanding",
+            "MLflow",
+            "NumPy",
+            "Pandas",
+            "Scikit-learn",
+            "REST APIs",
+            "MySQL",
+            "PostgreSQL",
+            "Prometheus",
+            "Grafana",
+            "ELK Stack",
+            "TCP/IP fundamentals",
+            "cloud security basics",
+            "ClickUp",
+            "Trello",
+            "Agile and DevOps workflows"
+          ].map((skill) => (
             <span key={skill} className="px-2 py-1 bg-blue-500/95 text-white rounded-[var(--radius)] text-sm shadow-[0_1px_2px_rgba(0,0,0,0.1)]">
               {skill}
             </span>
-          ))}
+          ))} 
         </div>
       </section>
     </main>
