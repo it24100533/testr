@@ -81,6 +81,7 @@ export default function Page() {
               "FinOps Concepts",
               "Azure",
               "AWS (EC2, S3, IAM)",
+              "IaC",
               "ML lifecycle understanding",
               "MLflow",
               "NumPy",
@@ -96,7 +97,6 @@ export default function Page() {
               "Cloud security basics",
               "ClickUp",
               "Trello",
-         
             ].map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
                 <Badge key={skill} variant="blue">{skill}</Badge>
