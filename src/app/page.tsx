@@ -65,7 +65,7 @@ export default function Page() {
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-            {["Linux", "Docker", "Kubernetes", "Git/GitHub", "Jenkins", "AWS","Azure","GCP", "TensorFlow", "Python", "Java", "SQL", "scikit-learn","Jira","Openstack","Openshift","React"].map((skill, id) => (
+            {["OOP", "UNIX/Linux", "Bash", "Python", "Git", "GitHub", "GitLab", "CI/CD", "Jenkins", "Docker", "Kubernetes", "Microservices", "Terraform", "Ansible", "YAML", "AWS", "Azure", "Prometheus", "Grafana", "TCP/IP", "Firewalls", "VPNs", "IAM", "Cloud Security", "ClickUp", "Trello", "Agile", "DevOps", "SQL", "RDBMS", "ELK Stack"].map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
                 <Badge key={skill} variant="blue">{skill}</Badge>
               </BlurFade>
