@@ -88,7 +88,7 @@ export default function RootLayout({
         <link rel="preload" href={DATA.avatarUrl} as="image" />
       </head>
       <body
-        className="min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-5 sm:py-16 px-4 sm:px-6 pb-[calc(4rem+env(safe-area-inset-bottom))] md:pb-0"
+        className="min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-5 sm:py-16 px-4 sm:px-6"
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
