@@ -108,6 +108,55 @@ export default function RootLayout({
             `,
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  if (typeof window === 'undefined') return;
+                  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+                  if (!isMobile) return;
+                  
+                  let navbarElement = null;
+                  let lastViewportHeight = window.visualViewport?.height ?? window.innerHeight;
+                  
+                  const stabilizeNavbar = () => {
+                    try {
+                      if (!navbarElement) {
+                        navbarElement = document.querySelector('.navbar-mobile-fixed');
+                        if (!navbarElement) return;
+                      }
+                      
+                      const currentHeight = window.visualViewport?.height ?? window.innerHeight;
+                      const heightChanged = currentHeight !== lastViewportHeight;
+                      
+                      if (heightChanged) {
+                        lastViewportHeight = currentHeight;
+                        navbarElement.style.transform = 'translateZ(0)';
+                        requestAnimationFrame(() => {
+                          navbarElement.style.transform = '';
+                        });
+                      }
+                    } catch (e) {}
+                  };
+                  
+                  if (window.visualViewport) {
+                    window.visualViewport.addEventListener('resize', stabilizeNavbar, { passive: true });
+                    window.visualViewport.addEventListener('scroll', stabilizeNavbar, { passive: true });
+                  }
+                  
+                  window.addEventListener('resize', stabilizeNavbar, { passive: true });
+                  window.addEventListener('orientationchange', stabilizeNavbar, { passive: true });
+                  
+                  document.addEventListener('DOMContentLoaded', () => {
+                    navbarElement = document.querySelector('.navbar-mobile-fixed');
+                    stabilizeNavbar();
+                  }, { once: true });
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
       </head>
       <body
         className="min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-5 sm:py-16 px-4 sm:px-6"
