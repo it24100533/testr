@@ -65,7 +65,7 @@ export default function Page() {
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-          {['UNIX/Linux','DevOps', 'Bash', 'YAML',  'Git', 'GitHub','OOP Concepts', 'AWS', 'Azure', 'CI/CD', 'Jenkins', 'Docker', 'Kubernetes', 'Microservices', 'Python', 'ML lifecycle understanding', 'MLflow', 'NumPy', 'Pandas', 'Scikit learn','REST APIs',  'Terraform', 'Ansible', 'Prometheus', 'Grafana', 'TCP/IP', 'Firewalls', 'VPNs', 'Cloud Security', 'ClickUp', 'Trello', 'SQL', 'RDBMS', 'ELK Stack Basics'].map((skill, id) => (
+          {['UNIX/Linux','DevOps', 'Bash', 'YAML',  'Git', 'GitHub','OOP Concepts', 'AWS', 'Azure', 'CI/CD', 'Jenkins', 'Docker', 'Kubernetes', 'Microservices', 'Python','Java', 'ML lifecycle', 'MLflow', 'NumPy', 'Pandas', 'Scikit learn','REST APIs',  'Terraform', 'ArgoCD','Ansible', 'Prometheus', 'Grafana', 'TCP/IP', 'Firewalls', 'VPNs', 'Cloud Security', 'ClickUp', 'Trello', 'SQL', 'RDBMS', 'ELK Stack Basics','IaC'].map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
                 <Badge key={skill} variant="blue">{skill}</Badge>
               </BlurFade>
