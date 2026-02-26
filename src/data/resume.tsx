@@ -14,7 +14,7 @@ export const DATA = {
     "I’m an enthusiastic IT student passionate about **DevOps**, **Cloud technologies** and **AI/ML**. Passionate about solving technical challenges and collaborating to build scalable, reliable systems that make an impact. Also interested in AI and Machine Learning using them to create smart solutions that simplify work and improve efficiency.",
   avatarUrl: "/mee1.png",
   skills: [
-    "Reactt",
+    "React",
     "Next.js",
     "Typescript",
     "Node.js",
@@ -24,7 +24,13 @@ export const DATA = {
     "Docker",
     "Kubernetes",
     "Java",
-    "C++ddd",
+    "C++",
+    "ML lifecycle understanding",
+    "MLflow",
+    "NumPy",
+    "Pandas",
+    "Scikit learn",
+    "REST APIs",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },

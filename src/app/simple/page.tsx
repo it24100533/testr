@@ -31,7 +31,7 @@ export default function SimplePage() {
       <section id="skills">
         <h2 className="text-xl font-bold">Skills</h2>
         <div className="flex flex-wrap gap-1">
-          {["Linux", "Docker", "Kubernetes", "Git/GitHub", "Jenkins", "AWS", "Azure", "GCP", "TensorFlow", "Python", "Java", "SQL", "scikit-learn", "Jira", "Openstack", "Openshift"].map((skill) => (
+          {["Linux", "Docker", "Kubernetes", "Git/GitHub", "Jenkins", "AWS", "Azure", "GCP", "TensorFlow", "Python", "ML lifecycle understanding", "MLflow", "NumPy", "Pandas", "Scikit learn", "REST APIs", "Java", "SQL", "scikit-learn", "Jira", "Openstack", "Openshift"].map((skill) => (
             <span key={skill} className="px-2 py-1 bg-blue-500/95 text-white rounded-[var(--radius)] text-sm shadow-[0_1px_2px_rgba(0,0,0,0.1)]">
               {skill}
             </span>

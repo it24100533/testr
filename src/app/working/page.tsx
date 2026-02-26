@@ -54,7 +54,7 @@ export default function WorkingPage() {
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-            {["Linux", "Docker", "Kubernetes", "Git/GitHub", "Jenkins", "AWS","Azure","GCP", "TensorFlow", "Python", "Java", "SQL", "scikit-learn","Jira","Openstack","Openshift"].map((skill, id) => (
+            {["Linux", "Docker", "Kubernetes", "Git/GitHub", "Jenkins", "AWS","Azure","GCP", "TensorFlow", "Python", "ML lifecycle understanding", "MLflow", "NumPy", "Pandas", "Scikit learn", "REST APIs", "Java", "SQL", "scikit-learn","Jira","Openstack","Openshift"].map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
                 <Badge key={skill} variant="blue">{skill}</Badge>
               </BlurFade>
