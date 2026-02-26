@@ -5,6 +5,7 @@ import { ProjectsGrid } from "@/components/projects-grid";
 import { ResumeCard } from "@/components/resume-card";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
+import AnimatedTooltipPreview from "@/components/ui/animated-tooltip-demo";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -165,6 +166,35 @@ export default function HomeBelowFold() {
         </div>
       </section>
 
+      <section id="recommendations" className="overflow-x-hidden -mt-2 sm:mt-0">
+        <div className="grid items-center justify-center gap-3 sm:gap-4 px-4 text-center md:px-6 w-full max-w-full pt-2 pb-6 sm:py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div className="space-y-3">
+              <h2 className="text-2xl font-bold tracking-tight">
+                Recommendations
+              </h2>
+              <p className="text-muted-foreground">
+                Trusted Recommendations from Mentors, Seniors & Collaborators.
+              </p>
+              {/* Keep the checklist handy for development: */}
+              {/*
+              - shadcn/ui project structure
+              - Tailwind CSS v4.0 (current: 3.4.1)
+              - TypeScript
+
+              If any of these are missing, run `npx shadcn@latest init`,
+              install Tailwind (`npm install -D tailwindcss@latest postcss autoprefixer`)
+              and add typescript as a dev dependency.
+
+              Default path for components is src/components/ui; create it if not
+              present so the CLI and imports stay organised.
+              */}
+            </div>
+          </BlurFade>
+          <AnimatedTooltipPreview />
+        </div>
+      </section>
+
       <section id="contact" className="overflow-x-hidden -mt-2 sm:mt-0">
         <div className="grid items-center justify-center gap-3 sm:gap-4 px-4 text-center md:px-6 w-full max-w-full pt-2 pb-6 sm:py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
@@ -191,8 +221,8 @@ export default function HomeBelowFold() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  WhatsApp
-                </Link>.
+                  WhatsApp.
+                </Link>
               </p>
             </div>
           </BlurFade>
