@@ -132,9 +132,10 @@ export default function RootLayout({
                       
                       if (heightChanged) {
                         lastViewportHeight = currentHeight;
-                        navbarElement.style.transform = 'translateZ(0)';
+                        // temporarily trigger GPU layer without wiping translateY offset
+                        navbarElement.style.transform = 'translateY(-1rem) translateZ(0)';
                         requestAnimationFrame(() => {
-                          navbarElement.style.transform = '';
+                          navbarElement.style.transform = 'translateY(-1rem)';
                         });
                       }
                     } catch (e) {}

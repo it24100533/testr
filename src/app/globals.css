@@ -261,8 +261,8 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
     will-change: transform !important;
     contain: layout style !important;
     
-    /* Hardware acceleration: ensure navbar doesn't shift with address bar */
-    transform: translateZ(0) !important;
+    /* Hardware acceleration: ensure navbar doesn't shift with address bar; maintain desktop gap via translateY */
+    transform: translateZ(0) translateY(-1rem) !important;
     backface-visibility: hidden !important;
     -webkit-font-smoothing: antialiased !important;
   }
