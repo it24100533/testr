@@ -240,7 +240,7 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
     width: 100% !important;
     
     /* Match desktop navbar dimensions */
-    height: 100% !important;
+    height: 3.5rem !important;  /* fixed height same as desktop */
     max-height: 3.5rem !important;  /* Same as desktop max-h-14 (56px) */
     
     /* Remove margin to avoid double spacing with bottom positioning */
@@ -254,7 +254,7 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
     /* Layout */
     display: flex !important;
     flex-direction: column !important;
-    justify-content: flex-end !important;
+    justify-content: center !important;
     pointer-events: none !important;
     
     /* Performance: Prevent layout shifts during viewport changes */
