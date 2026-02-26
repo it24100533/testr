@@ -15,7 +15,7 @@ const nextConfig = {
   // Performance optimizations
   compress: true,
   poweredByHeader: false,
-  reactStrictMode: true,
+  reactStrictMode: false,
   // Optimize production builds
   swcMinify: true,
   // Optimize fonts
@@ -25,6 +25,8 @@ const nextConfig = {
     maxInactiveAge: 60 * 1000,
     pagesBufferLength: 5,
   },
+  // Improve build performance
+  productionBrowserSourceMaps: false,
 };
 
 export default nextConfig;

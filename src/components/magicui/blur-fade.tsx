@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 interface BlurFadeProps {
@@ -44,11 +43,6 @@ const BlurFade = ({
 
   const motionVariants = variant || defaultVariants;
 
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-  useEffect(() => {
-    setPrefersReducedMotion(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
-  }, []);
-
   return (
     <motion.div
       ref={inViewRef}
@@ -57,8 +51,8 @@ const BlurFade = ({
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       transition={{
-        duration: prefersReducedMotion ? 0.1 : duration,
-        delay: prefersReducedMotion ? 0 : delay,
+        duration,
+        delay,
         type: "spring",
         stiffness: 100,
         damping: 30,

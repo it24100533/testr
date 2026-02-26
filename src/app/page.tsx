@@ -10,7 +10,10 @@ import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
-const HomeBelowFold = dynamic(() => import("./HomeBelowFold"), { ssr: true });
+const HomeBelowFold = dynamic(() => import("./HomeBelowFold"), { 
+  ssr: true,
+  loading: () => null,
+});
 
 export default function Page() {
   return (
