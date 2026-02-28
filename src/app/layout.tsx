@@ -243,7 +243,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-5 sm:py-16 px-4 sm:px-6"
+        className="min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto pt-4 sm:pt-8 pb-5 sm:pb-16 px-4 sm:px-6"
         suppressHydrationWarning
       >
         <header className="sr-only" aria-label="Site header">
