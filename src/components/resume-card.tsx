@@ -124,6 +124,8 @@ const ResumeCardComponent = ({
                       <img
                         src={src}
                         alt={`${title} showcase image ${idx + 1}`}
+                        width={640}
+                        height={360}
                         className="w-full h-full object-cover"
                         loading="lazy"
                         decoding="async"

@@ -17,7 +17,9 @@ const HomeBelowFold = dynamic(() => import("./HomeBelowFold"), {
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-6 sm:space-y-10 pb-20 sm:pb-8">
+    <main role="main" className="flex flex-col min-h-[100dvh] space-y-6 sm:space-y-10 pb-20 sm:pb-8">
+      {/* hidden heading with keywords for SEO */}
+      <h2 className="sr-only">DevOps, Cloud, AI/ML</h2>
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-5 sm:space-y-8">
           <div className="gap-2 flex justify-between">

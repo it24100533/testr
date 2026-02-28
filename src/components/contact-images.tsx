@@ -62,7 +62,11 @@ export function ContactImages() {
             >
               <img
                 src={src}
-                alt=""
+                alt={`Ravindu Danthanarayana contact screenshot ${idx + 1}`}
+                width={640}
+                height={360}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </motion.div>
