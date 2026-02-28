@@ -70,7 +70,7 @@ export default function Page() {
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-          {['FinOps', 'DevOps', 'Bash', 'YAML', 'UNIX/Linux', 'Git', 'GitHub','Gitlab','OOP Concepts', 'AWS', 'Azure', 'CI/CD', 'Jenkins', 'Docker', 'Kubernetes', 'Microservices', 'Python','Java', 'ML lifecycle', 'MLflow', 'NumPy', 'Pandas', 'Scikit learn','REST APIs',  'Terraform', 'ArgoCD','Ansible', 'Prometheus', 'Grafana', 'TCP/IP', 'Firewalls', 'VPNs', 'Cloud Security', 'ClickUp', 'Trello', 'SQL', 'RDBMS', 'ELK Stack Basics','IaC'].map((skill, id) => (
+          {[ 'DevOps', 'Bash', 'YAML', 'UNIX/Linux', 'Git', 'GitHub','Gitlab','OOP Concepts', 'AWS', 'Azure', 'CI/CD', 'Jenkins', 'Docker', 'Kubernetes', 'Microservices', 'Python','Java', 'ML lifecycle', 'MLflow', 'NumPy', 'Pandas', 'Scikit learn','REST APIs',  'Terraform', 'ArgoCD','Ansible', 'Prometheus', 'Grafana', 'TCP/IP', 'Firewalls', 'VPNs', 'Cloud Security', 'ClickUp', 'Trello', 'SQL', 'RDBMS', 'ELK Stack Basics','IaC','FinOps'].map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
                 <Badge key={skill} variant="blue">{skill}</Badge>
               </BlurFade>
