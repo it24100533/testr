@@ -174,7 +174,7 @@ export default function HomeBelowFold() {
                 Recommendations
               </h2>
               <p className="text-muted-foreground">
-                Trusted Recommendations from Mentors, Seniors & Collaborators.
+                Recommendations from Mentors, Seniors & Collaborators.
               </p>
               {/* Keep the checklist handy for development: */}
               {/*
