@@ -37,7 +37,7 @@ export default function Page() {
                 <Button asChild variant="outline" size="default" className="mt-4 gap-2 hover:translate-y-0 active:scale-100">
                   <a href={DATA.cvUrl} download>
                     <Download className="size-4" aria-hidden />
-                    Download CV
+                    Download Resume
                   </a>
                 </Button>
               </BlurFade>
