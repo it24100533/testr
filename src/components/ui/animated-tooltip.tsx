@@ -37,7 +37,7 @@ export const AnimatedTooltip = ({
                 animate={{
                   opacity: 1,
                   y: 0,
-                  x: "-50%",
+                  x: "-40%",
                   scale: 1,
                   transition: {
                     type: "spring",
