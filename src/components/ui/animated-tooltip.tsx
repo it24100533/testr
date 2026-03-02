@@ -33,11 +33,11 @@ export const AnimatedTooltip = ({
           <AnimatePresence>
             {hoveredIndex === item.id && (
               <motion.div
-                initial={{ opacity: 0, y: 20, scale: 0.6 }}
+                initial={{ opacity: 0, y: 10, scale: 0.6 }}
                 animate={{
                   opacity: 1,
                   y: 0,
-                  x: "-47%",
+                  x: "-50%",
                   scale: 1,
                   transition: {
                     type: "spring",
@@ -45,9 +45,10 @@ export const AnimatedTooltip = ({
                     damping: 10,
                   },
                 }}
-                exit={{ opacity: 0, y: 20, scale: 0.6 }}
+                exit={{ opacity: 0, y: 0, scale: 0.6 }}
                 style={{
                   whiteSpace: "nowrap",
+                  transformOrigin: "center bottom",
                 }}
                 className="absolute -top-16 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center justify-center rounded-md bg-black px-4 py-2 text-xs shadow-xl"
               >
