@@ -25,10 +25,10 @@ const people = [
   },
   {
     id: 4,
-    name: "-",
-    designation: "-",
+    name: "Priyankara Bandara Athukorale",
+    designation: "Chairman@Sungreen Resort & Spa",
     image:
-      "./",
+      "./priyankara.jpeg",
   },
   {
     id: 5,
