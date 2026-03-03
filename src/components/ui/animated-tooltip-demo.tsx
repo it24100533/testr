@@ -4,10 +4,11 @@ import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 const people = [
   {
     id: 1,
-    name: "Damsith Rathnayake",
-    designation: "HR Manager@InQube Global",
+      name: "Nimesha Jinarajadasa",
+    designation: "Associate Solutions Architect@Kodekloud",
     image:
-      "./damsith.jpeg",
+      "./nimesha.jpeg",
+    
   },
   {
     id: 2,
@@ -32,10 +33,10 @@ const people = [
   },
   {
     id: 5,
-    name: "Nimesha Jinarajadasa",
-    designation: "Associate Solutions Architect@Kodekloud",
+  name: "Damsith Rathnayake",
+    designation: "HR Manager@InQube Global",
     image:
-      "./nimesha.jpeg",
+      "./damsith.jpeg",
   },
   {
     id: 6,
