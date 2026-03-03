@@ -7,7 +7,7 @@ const people = [
       name: "Nimesha Jinarajadasa",
     designation: "Associate Solutions Architect@Kodekloud",
     image:
-      "./nimesha.jpeg",
+      "./Nimesha.jpeg",
     
   },
   {
