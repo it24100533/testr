@@ -25,8 +25,8 @@ const people = [
   },
   {
     id: 4,
-    name: "Priyankara Bandara Athukorale",
-    designation: "Chairman@Sungreen Resort & Spa",
+    name: "Priyankara Bandara ",
+    designation: "Chairman@Sungreen Resort",
     image:
       "./priyankara.jpeg",
   },
