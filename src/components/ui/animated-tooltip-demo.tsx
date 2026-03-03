@@ -32,10 +32,10 @@ const people = [
   },
   {
     id: 5,
-    name: "-",
-    designation: "",
+    name: "Nimesha Jinarajadasa",
+    designation: "Associate Solutions Architect@Kodekloud",
     image:
-      "./",
+      "./nimesha.jpeg",
   },
   {
     id: 6,
