@@ -1,5 +1,4 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Ravindu Danthanarayana",
@@ -33,8 +32,8 @@ export const DATA = {
     "REST APIs",
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "https://medium.com/@ravindudanthanarayana", icon: NotebookIcon, label: "Blog" },
+    { href: "/", icon: Icons.home, label: "Home" },
+    { href: "https://medium.com/@ravindudanthanarayana", icon: Icons.blog, label: "Blog" },
   ],
   contact: {
     email: "hello@example.com",
@@ -98,7 +97,7 @@ export const DATA = {
       images: [
         "/code1.png",
         "/code2.jpg",
-  
+
       ],
     },
     // {
@@ -113,7 +112,7 @@ export const DATA = {
     //   description:
     //     "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
     // },
-    
+
   ],
   education: [
     {
@@ -154,10 +153,10 @@ export const DATA = {
       images: [
         "/drc2.jpg",
         "/drc4.jpg",
-           "/drc1.jpg",
-         "/drc5.jpg",
-          "/drc6.jpg",
-          "/drc3.JPG"
+        "/drc1.jpg",
+        "/drc5.jpg",
+        "/drc6.jpg",
+        "/drc3.JPG"
       ],
     },
   ],
@@ -197,7 +196,7 @@ export const DATA = {
     //   logoUrl: "/kuba.svg",
     //   link: "https://www.credly.com/badges/4d10da90-746c-40cc-861a-9fc40e0dadd5"
     // },
-     {
+    {
       name: "GitHub Foundations",
       issuer: "Github",
       date: "2025",
@@ -205,7 +204,7 @@ export const DATA = {
       link: "https://www.credly.com/badges/9c91a2c0-c126-4c94-8893-86ac1f3654dc/linked_in_profile"
     },
 
-         {
+    {
       name: "AWS Well Architected Proficient",
       issuer: "AWS",
       date: "2025",
@@ -360,7 +359,7 @@ export const DATA = {
 
 
 
-    
+
 
 
     // {
@@ -393,7 +392,7 @@ export const DATA = {
 
 
 
-    
+
 
 
     {
@@ -560,7 +559,7 @@ export const DATA = {
 
 
 
-//see more text
+    //see more text
 
     // {
     //   title: "project 5",
