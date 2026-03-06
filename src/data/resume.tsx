@@ -395,65 +395,7 @@ export const DATA = {
 
 
 
-    {
-      title: "EFK",
-      href: "#",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
-      technologies: [
-        "MLflow",
-        "DVC",
-        "Flask",
-        "AWS EC2",
-        "AWS ECR",
-        "AWS S3",
-        "Docker",
-        "GitHub Actions",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/ravindudanthanarayana/SentiScope",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/",
-    },
-
-    {
-      title: "ds",
-      href: "#",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "My old portfolio website, where I showcased my full-stack (MERN) development and UI/UX design projects, skills, and contact information.",
-      technologies: [
-        "HTML5",
-        "CSS3",
-        "JavaScript(Vanilla) ",
-        "GSAP",
-        "AWS S3",
-        "AWS CloudFront",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://portfolio-0808old.s3.eu-north-1.amazonaws.com/index.html",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ravindudanthanarayana/portfolioweb0808",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "/dscar.MOV",
-    },
+  
 
 
     {
@@ -510,7 +452,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://www.sliitgpa.vercel.app/",
+          href: "https://sliitgpa.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -524,6 +466,58 @@ export const DATA = {
         "/sliitgpa.mov",
     },
 
+
+      {
+      title: "SungreenHabarana Website",
+      href: "#",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "Designed a responsive hotel website with booking features, immersive visuals, and a clean user experience. ",
+      technologies:  [
+        "WordPress",
+         "PHP",
+        "MySQL",
+        "Elementor",
+        "SEO Optimization",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://sungreenhabarana.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/sh.MOV",
+    },
+
+    {
+      title: "bssenanayakemotors Website",
+      href: "#",
+      dates: "April 2023 - September 2023",
+      active: true,
+      description:
+        "Developed a responsive WordPress vehicle dealership website with listings, search filters, and lead generation features.",
+      technologies: [
+        "WordPress",
+        "PHP",
+        "MySQL",
+        "Elementor",
+        "SEO Optimization",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://bssenanayakemotors.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        
+      ],
+      image: "",
+      video:
+        "/dscar.MOV",
+    },
 
     // {
     //   title: "Lashura Global",

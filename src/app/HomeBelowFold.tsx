@@ -24,7 +24,7 @@ export default function HomeBelowFold() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Projects I built instead of sleeping. Powered by caffeine, fueled by curiosity, and debugged under the dim glow of midnight screens.
+                  Projects built late at night, fueled by curiosity and coffee.
                 </p>
               </div>
             </div>
@@ -133,12 +133,7 @@ export default function HomeBelowFold() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I took part in{" "}
-                  {DATA.ventures.length}+ ventures. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
+                  I enjoy building and turning ideas into real products, working with motivated teams and real clients to gain industry exposure. These experiences strengthened my leadership, problem solving, and teamwork skills while building innovative digital products.
                 </p>
               </div>
             </div>
