@@ -42,15 +42,23 @@ function VentureCardComponent({
   return (
     <li className="relative ml-10 py-4">
       <div className="absolute -left-16 top-2 flex items-center justify-center rounded-full border border-[var(--glass-border)] bg-[var(--glass-bg)] shadow-[var(--glass-shadow)]">
-        <Avatar className="border border-[var(--glass-border)] size-12 m-auto">
-          <AvatarImage src={image} alt={`${title} logo`} className="object-contain" />
-          <AvatarFallback aria-label={title}>{title[0]}</AvatarFallback>
-        </Avatar>
+        <button
+          type="button"
+          onClick={() => hasImages && setShowImages((prev) => !prev)}
+          className={cn(
+            "rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary",
+            hasImages ? "cursor-pointer" : "cursor-default"
+          )}
+          aria-expanded={showImages}
+          aria-label={hasImages ? `Toggle ${title} images` : title}
+        >
+          <Avatar className="border border-[var(--glass-border)] size-12 m-auto">
+            <AvatarImage src={image} alt={`${title} logo`} className="object-contain" />
+            <AvatarFallback aria-label={title}>{title[0]}</AvatarFallback>
+          </Avatar>
+        </button>
       </div>
       <div className="flex flex-1 flex-col justify-start gap-1">
-        {dates && (
-          <time className="text-xs text-muted-foreground">{dates}</time>
-        )}
         <button
           type="button"
           onClick={() => hasImages && setShowImages((prev) => !prev)}
@@ -60,33 +68,39 @@ function VentureCardComponent({
               setShowImages((prev) => !prev);
             }
           }}
-          className={`inline-flex items-center gap-1.5 font-semibold leading-none text-left -ml-1 rounded px-1 group ${
+          className={cn(
+            "flex flex-col justify-start gap-1 text-left -ml-1 rounded px-1 group w-full",
             hasImages
               ? "cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary"
-              : ""
-          }`}
+              : "cursor-default"
+          )}
           aria-expanded={showImages}
           aria-controls={`${title}-images`}
           aria-label={hasImages ? `Toggle ${title} images` : title}
         >
-          {title}
-          {hasImages && (
-            <ChevronRight
-              className={cn(
-                "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                showImages ? "rotate-90" : "rotate-0"
-              )}
-            />
+          {dates && (
+            <time className="text-xs text-muted-foreground">{dates}</time>
+          )}
+          <div className="inline-flex items-center gap-1.5 font-semibold leading-none">
+            {title}
+            {hasImages && (
+              <ChevronRight
+                className={cn(
+                  "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
+                  showImages ? "rotate-90" : "rotate-0"
+                )}
+              />
+            )}
+          </div>
+          {location && (
+            <p className="text-sm text-muted-foreground">{location}</p>
+          )}
+          {description && (
+            <span className="prose dark:prose-invert text-sm text-muted-foreground">
+              {description}
+            </span>
           )}
         </button>
-        {location && (
-          <p className="text-sm text-muted-foreground">{location}</p>
-        )}
-        {description && (
-          <span className="prose dark:prose-invert text-sm text-muted-foreground">
-            {description}
-          </span>
-        )}
       </div>
       <AnimatePresence initial={false}>
         {hasImages && showImages && (
