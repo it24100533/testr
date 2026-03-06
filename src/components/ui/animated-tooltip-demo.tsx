@@ -33,17 +33,18 @@ const people = [
   },
   {
     id: 5,
-  name: "Damsith Rathnayake",
-    designation: "HR Manager@InQube Global",
+      name: "Tharindu Kalhara",
+    designation: "DevRel Engineer@CertDirectory.io",
     image:
-      "./damsith.jpeg",
+      "./Tharindu.JPG",
+ 
   },
   {
     id: 6,
-    name: "-",
-    designation: "-",
+   name: "Damsith Rathnayake",
+    designation: "HR Manager@InQube Global",
     image:
-      "./",
+      "./damsith.jpeg",
   },
   
 ];
