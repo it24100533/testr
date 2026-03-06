@@ -39,13 +39,13 @@ const people = [
       "./Tharindu.JPG",
  
   },
-  {
-    id: 6,
-   name: "Damsith Rathnayake",
-    designation: "HR Manager@InQube Global",
-    image:
-      "./damsith.jpeg",
-  },
+  // {
+  //   id: 6,
+  //  name: "Damsith Rathnayake",
+  //   designation: "HR Manager@InQube Global",
+  //   image:
+  //     "./damsith.jpeg",
+  // },
   
 ];
 
