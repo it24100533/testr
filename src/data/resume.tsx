@@ -300,7 +300,7 @@ export const DATA = {
 
 
     {
-      title: "DevSecOpsss",
+      title: "Y2S1 SE Group Project",
       href: "#",
       dates: "June 2023 - Present",
       active: true,
@@ -330,7 +330,7 @@ export const DATA = {
 
 
     {
-      title: "AWS",
+      title: "Y2S1 AI Group Project",
       href: "#",
       dates: "June 2023 - Present",
       active: true,
