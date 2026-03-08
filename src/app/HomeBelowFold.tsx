@@ -39,7 +39,7 @@ export default function HomeBelowFold() {
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <h2 className="text-xl font-bold">Work Experience</h2>
             </BlurFade>
-            {DATA.work.map((work, id) => (
+            {DATA.work.map((work: any, id) => (
               <BlurFade
                 key={work.company}
                 delay={BLUR_FADE_DELAY * 10 + id * 0.05}

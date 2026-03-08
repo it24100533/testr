@@ -265,6 +265,16 @@ export const DATA = {
           href: "https://github.com/ravindudanthanarayana/SentiScope",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Blog",
+          href: "#", // TODO: replace with actual blog URL
+          icon: <Icons.blog className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://portfolio-0808old.s3.eu-north-1.amazonaws.com/index.html",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
       image: "",
       video: "/",
