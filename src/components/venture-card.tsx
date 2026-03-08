@@ -112,7 +112,7 @@ function VentureCardComponent({
             transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
             className="mt-3 overflow-hidden"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-2">
               {images!.map((src, idx) => (
                 !failedImages.has(src) && (
                   <motion.div

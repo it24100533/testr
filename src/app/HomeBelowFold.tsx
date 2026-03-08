@@ -21,7 +21,7 @@ export default function HomeBelowFold() {
                   Projects & Technical Builds
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Real projects, DevOps challenges, and hands on experiments.
+                  Real projects, DevOps challenges and hands on experiments.
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Things I’ve built while learning, experimenting and solving real problems with code, cloud and DevOps tools.
@@ -33,32 +33,34 @@ export default function HomeBelowFold() {
         </div>
       </section>
 
-      <section id="work">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
-          </BlurFade>
-          {DATA.work.map((work, id) => (
-            <BlurFade
-              key={work.company}
-              delay={BLUR_FADE_DELAY * 10 + id * 0.05}
-            >
-              <ResumeCard
-                key={work.company}
-                logoUrl={work.logoUrl}
-                altText={work.company}
-                title={work.company}
-                subtitle={work.title}
-                href={work.href}
-                badges={work.badges}
-                period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
-                images={work.images}
-              />
+      {DATA.work.length > 0 && (
+        <section id="work">
+          <div className="flex min-h-0 flex-col gap-y-3">
+            <BlurFade delay={BLUR_FADE_DELAY * 9}>
+              <h2 className="text-xl font-bold">Work Experience</h2>
             </BlurFade>
-          ))}
-        </div>
-      </section>
+            {DATA.work.map((work, id) => (
+              <BlurFade
+                key={work.company}
+                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+              >
+                <ResumeCard
+                  key={work.company}
+                  logoUrl={work.logoUrl}
+                  altText={work.company}
+                  title={work.company}
+                  subtitle={work.title}
+                  href={work.href}
+                  badges={work.badges}
+                  period={`${work.start} - ${work.end ?? "Present"}`}
+                  description={work.description}
+                  images={work.images}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
@@ -186,7 +188,9 @@ export default function HomeBelowFold() {
               */}
             </div>
           </BlurFade>
-          <AnimatedTooltipPreview />
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <AnimatedTooltipPreview />
+          </BlurFade>
         </div>
       </section>
 

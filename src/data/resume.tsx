@@ -83,23 +83,23 @@ export const DATA = {
   },
 
   work: [
-    {
-      company: "CoDeKu Labs",
-      href: "https://atomic.finance",
-      badges: [],
-      location: "Remote",
-      title: "Creative Designer",
-      logoUrl: "/codeku.png",
-      start: "Jun 2024",
-      end: "Dec 2024",
-      description:
-        "Designed architecture diagrams, workflows, and visual representations of cloud and DevOps systems for educational content. Created engaging graphics and visuals to simplify complex technical concepts for a wide audience. Collaborated with content creators to ensure accurate and visually appealing representations of cloud infrastructure, DevOps processes, and AI/ML workflows.",
-      images: [
-        "/code1.png",
-        "/code2.jpg",
-
-      ],
-    },
+    // {
+    //   company: "CoDeKu Labs",
+    //   href: "https://atomic.finance",
+    //   badges: [],
+    //   location: "Remote",
+    //   title: "Creative Designer",
+    //   logoUrl: "/codeku.png",
+    //   start: "Jun 2024",
+    //   end: "Dec 2024",
+    //   description:
+    //     "Designed architecture diagrams, workflows, and visual representations of cloud and DevOps systems for educational content. Created engaging graphics and visuals to simplify complex technical concepts for a wide audience. Collaborated with content creators to ensure accurate and visually appealing representations of cloud infrastructure, DevOps processes, and AI/ML workflows.",
+    //   images: [
+    //     "/code1.png",
+    //     "/code2.jpg",
+    //
+    //   ],
+    // },
     // {
     //   company: "Lashura Global",
     //   badges: [],
