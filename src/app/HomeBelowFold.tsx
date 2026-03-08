@@ -18,13 +18,13 @@ export default function HomeBelowFold() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-[var(--radius)] bg-foreground text-background px-3 py-1 text-sm shadow-[0_1px_2px_rgba(0,0,0,0.08)]">
-                  My Projects
+                  Projects & Technical Builds
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  Real projects, DevOps challenges, and hands on experiments.
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Projects built late at night, fueled by curiosity and coffee.
+                  Things I’ve built while learning, experimenting and solving real problems with code, cloud and DevOps tools.
                 </p>
               </div>
             </div>
