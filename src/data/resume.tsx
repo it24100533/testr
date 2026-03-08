@@ -308,6 +308,91 @@ export const DATA = {
       video: "/yttt.mov",
     },
 
+    {
+      title: "100dod",
+      href: "#",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+      technologies: [
+        "MLflow",
+        "DVC",
+        "Flask",
+        "AWS EC2",
+        "AWS ECR",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Blog",
+          href: "#", // TODO: replace with actual blog URL
+          icon: <Icons.blog className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/",
+    },
+
+     {
+      title: "100doc- Az",
+      href: "#",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+      technologies: [
+        "MLflow",
+        "DVC",
+        "Flask",
+        "AWS EC2",
+        "AWS ECR",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Blog",
+          href: "#", // TODO: replace with actual blog URL
+          icon: <Icons.blog className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/",
+    },
+
+     {
+      title: "100doc - Aws",
+      href: "#",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+      technologies: [
+        "MLflow",
+        "DVC",
+        "Flask",
+        "AWS EC2",
+        "AWS ECR",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Blog",
+          href: "#", // TODO: replace with actual blog URL
+          icon: <Icons.blog className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/",
+    },
+
+
 
     {
       title: "Y2S1 SE Group Project",
