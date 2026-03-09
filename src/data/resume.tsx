@@ -537,11 +537,10 @@ export const DATA = {
         "Reactjs",
         "Vite",
         "Typescript",
-        "ESLint",
+        "Github Actions",
         "npm",
         "TailwindCSS",
         "Shadcn UI",
-        "Radix UI",
         "Vercel",
       ],
       links: [
