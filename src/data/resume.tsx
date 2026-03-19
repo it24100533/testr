@@ -336,7 +336,7 @@ export const DATA = {
       video: "/",
     },
 
-     {
+    {
       title: "100doc- Az",
       href: "#",
       dates: "June 2023 - Present",
@@ -364,7 +364,7 @@ export const DATA = {
       video: "/",
     },
 
-     {
+    {
       title: "100doc - Aws",
       href: "#",
       dates: "June 2023 - Present",
@@ -490,7 +490,7 @@ export const DATA = {
 
 
 
-  
+
 
 
     {
@@ -561,16 +561,16 @@ export const DATA = {
     },
 
 
-      {
+    {
       title: "SungreenHabarana Website",
       href: "#",
       dates: "June 2023 - Present",
       active: true,
       description:
         "Designed a responsive hotel website with booking features, immersive visuals, and a clean user experience. ",
-      technologies:  [
+      technologies: [
         "WordPress",
-         "PHP",
+        "PHP",
         "MySQL",
         "Elementor",
         "SEO Optimization",
@@ -606,7 +606,7 @@ export const DATA = {
           href: "https://bssenanayakemotors.com/",
           icon: <Icons.globe className="size-3" />,
         },
-        
+
       ],
       image: "",
       video:
