@@ -1,0 +1,22 @@
+name: CI Test Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: echo "GitHub Actions is working correctly on main branch!"
+
+      - name: Test environment
+        run: |
+          echo "Current branch: ${GITHUB_REF}"
+          echo "Workspace: ${GITHUB_WORKSPACE}"
+          node --version
