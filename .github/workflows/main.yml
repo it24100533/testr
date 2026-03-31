@@ -1,22 +1,31 @@
-name: CI Test Workflow
+name: CI/CD Pipeline
 
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run a one-line script
-        run: echo "GitHub Actions is working correctly on main branch!"
-
-      - name: Test environment
-        run: |
-          echo "Current branch: ${GITHUB_REF}"
-          echo "Workspace: ${GITHUB_WORKSPACE}"
-          node --version
+      - name: Setup Node.js v20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run ESLint
+        run: npm run lint
+        
+      - name: Build Next.js project
+        run: npm run build
