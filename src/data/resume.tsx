@@ -3,7 +3,7 @@ import { Icons } from "@/components/icons";
 export const DATA = {
   name: "Ravindu Danthanarayana",
   initials: "RD",
-  url: "https://ravindudanthanarayana.me",
+  url: "https://ravindu.cloud",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
@@ -255,7 +255,7 @@ export const DATA = {
       dates: "June 2023 - Present",
       active: true,
       description:
-        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+        "Developed a robust MLOps pipeline for real-time YouTube comment sentiment analysis. Integrated a Chrome extension with a Flask backend, utilizing MLflow and DVC for model versioning and reproduction.",
       technologies: [
         "MLflow",
         "DVC",
@@ -288,12 +288,12 @@ export const DATA = {
     },
 
     {
-      title: "SentiScope",
+      title: "SentiScope (Production Build)",
       href: "#",
       dates: "June 2023 - Present",
       active: true,
       description:
-        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+        "A production-ready deployment of the SentiScope project involving containerized microservices and automated CI/CD pipelines using GitHub Actions and AWS ECR/S3.",
       technologies: [
         "MLflow",
         "DVC",
@@ -316,12 +316,12 @@ export const DATA = {
     },
 
     {
-      title: "100dod",
+      title: "100 Days of DevOps",
       href: "#",
       dates: "June 2023 - Present",
       active: true,
       description:
-        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+        "A comprehensive 100-day challenge focusing on mastering DevOps tools including Docker, Kubernetes, Jenkins, and Terraform. Implemented various infrastructure automation scenarios on AWS.",
       technologies: [
         "MLflow",
         "DVC",
@@ -344,12 +344,12 @@ export const DATA = {
     },
 
     {
-      title: "100doc- Az",
+      title: "100 Days of Cloud (Azure)",
       href: "#",
       dates: "June 2023 - Present",
       active: true,
       description:
-        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+        "Dedicated cloud learning journey focused on Microsoft Azure fundamentals, including VM management, networking, and serverless computing using Azure Functions.",
       technologies: [
         "MLflow",
         "DVC",
@@ -372,12 +372,12 @@ export const DATA = {
     },
 
     {
-      title: "100doc - Aws",
+      title: "100 Days of Cloud (AWS)",
       href: "#",
       dates: "June 2023 - Present",
       active: true,
       description:
-        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+        "Intensive project series focusing on Amazon Web Services, implementing architectural patterns for high availability, scalability, and cost-optimization across core AWS services.",
       technologies: [
         "MLflow",
         "DVC",
@@ -407,7 +407,7 @@ export const DATA = {
       dates: "June 2023 - Present",
       active: true,
       description:
-        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+        "Collaborative software engineering project focusing on enterprise-scale application development, utilizing Agile methodologies and modern CI/CD practices for delivery.",
       technologies: [
         "MLflow",
         "DVC",
@@ -437,7 +437,7 @@ export const DATA = {
       dates: "June 2023 - Present",
       active: true,
       description:
-        "An end to end MLOps project delivering real time YouTube comment sentiment analysis through a simple Chrome extension.",
+        "Academic group project focused on implementing machine learning algorithms to solve real-world problems, emphasizing model evaluation and optimization strategies.",
       technologies: [
         "MLflow",
         "DVC",

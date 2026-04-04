@@ -108,12 +108,13 @@ export function ProjectCardComponent({
     };
   }, [video]);
   return (
-    <Card
-      className={
-        "flex flex-col overflow-hidden border h-full"
-      }
+    <article
+      className={cn(
+        "flex flex-col overflow-hidden border h-full rounded-lg bg-card text-card-foreground shadow-sm transition-all hover:shadow-md",
+        className
+      )}
     >
-      <div className={cn("block aspect-video w-full overflow-hidden", className)}>
+      <figure className="block aspect-video w-full overflow-hidden">
         {video && (
           <video
             ref={videoRef}
@@ -128,6 +129,7 @@ export function ProjectCardComponent({
             controlsList="nodownload nofullscreen noplaybackrate"
             disablePictureInPicture
             className="pointer-events-none mx-auto h-full w-full object-cover object-top"
+            aria-label={`${title} project demonstration video`}
             onLoadedMetadata={() => {
               const el = videoRef.current;
               if (el) {
@@ -163,10 +165,13 @@ export function ProjectCardComponent({
             loading="lazy"
             className="h-full w-full overflow-hidden object-cover object-top"
             quality={85}
-            sizes="(max-width: 640px) 50vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         )}
-      </div>
+      </figure>
+      <Card
+        className="flex flex-col border-0 bg-transparent shadow-none"
+      >
       <CardHeader className="px-2">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
@@ -208,7 +213,8 @@ export function ProjectCardComponent({
           </div>
         )}
       </CardFooter>
-    </Card>
+      </Card>
+    </article>
   );
 }
 

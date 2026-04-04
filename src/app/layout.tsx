@@ -24,13 +24,18 @@ export const metadata: Metadata = {
   description: DATA.description,
   keywords: [
     "Ravindu Danthanarayana",
-    "Ravindu portfolio",
-    "Ravindu software engineer",
-    "DevOps",
-    "Cloud",
-    "AI/ML",
-    "DevOps Engineer",
-    "Cloud Engineer",
+    "Ravindu Cloud",
+    "DevOps Engineer Portfolio",
+    "Cloud Engineer Portfolio",
+    "MLOps Engineer portfolio",
+    "Kubernetes Expert",
+    "AWS Certified Professional",
+    "Azure Fundamentals",
+    "Infrastructure as Code",
+    "Terraform",
+    "CI/CD Automation",
+    "GitOps ArgoCD",
+    "Site Reliability Engineering",
   ],
   authors: [{ name: DATA.name }],
   creator: DATA.name,
@@ -144,30 +149,49 @@ export default function RootLayout({
               {
                 "@type": "Person",
                 "name": "Ravindu Danthanarayana",
-                "alternateName": "Ravindu",
-                "jobTitle": "Software Engineer / DevOps / Cloud / AI-ML",
-                "url": DATA.url,
-                "image": DATA.avatarUrl,
+                "alternateName": "Ravindu Cloud",
+                "jobTitle": "DevOps, Cloud & AI/ML Engineer",
+                "url": "https://ravindu.cloud",
+                "image": "https://ravindu.cloud" + DATA.avatarUrl,
                 "sameAs": [
                   DATA.contact.social.LinkedIn.url,
-                  DATA.contact.social.GitHub.url
+                  DATA.contact.social.GitHub.url,
+                  "https://www.credly.com/users/ravindudanthanarayana"
                 ],
-                "address": { "@type": "PostalAddress", "addressCountry": "Sri Lanka" },
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Kandy",
+                  "addressCountry": "Sri Lanka"
+                },
+                "email": "ravindu.danth@gmail.com",
+                "description": "DevOps, Cloud Infrastructure, and MLOps specialist focusing on Kubernetes, AWS, and Azure.",
                 "knowsAbout": [
-                  "DevOps", "Cloud", "AI", "Machine Learning", "MLOps", "LLMOps", "Kubernetes", "Docker", "CI/CD", "AWS", "Azure", "GCP", "Terraform", "Linux", "Networking", "Observability"
-                ]
+                  "DevOps", "Cloud Computing", "AI", "Machine Learning", "MLOps", "LLMOps", "Kubernetes", "Docker", "CI/CD", "AWS", "Azure", "Terraform", "GitOps", "ArgoCD", "Ansible", "Observability", "FinOps"
+                ],
+                "alumniOf": {
+                  "@type": "EducationalOrganization",
+                  "name": "SLIIT"
+                },
+                "hasCredential": DATA.certifications.map(cert => ({
+                  "@type": "EducationalOccupationalCredential",
+                  "name": cert.name,
+                  "issuer": {
+                    "@type": "Organization",
+                    "name": cert.issuer
+                  }
+                }))
               },
               {
                 "@type": "WebSite",
-                "url": DATA.url,
-                "name": DATA.name,
-                "description": DATA.description
+                "url": "https://ravindu.cloud",
+                "name": "Ravindu Danthanarayana | DevOps & Cloud Engineer",
+                "description": "Portfolio of Ravindu Danthanarayana specializing in DevOps, Cloud Infrastructure, and MLOps."
               },
               {
                 "@type": "WebPage",
-                "url": DATA.url,
-                "name": DATA.name + " Portfolio Homepage",
-                "description": DATA.description
+                "url": "https://ravindu.cloud",
+                "name": "Ravindu Danthanarayana Portfolio",
+                "description": "DevOps, Cloud & AI/ML Engineer portfolio showcasing projects and certifications."
               }
             ]
           }, null, 2)

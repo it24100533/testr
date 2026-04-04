@@ -42,10 +42,11 @@ const ResumeCardComponent = ({
   };
 
   return (
-    <div
+    <article
       className="block cursor-pointer"
       onClick={handleClick}
-      role="button"
+      role="article"
+      aria-label={`${title} at ${subtitle}`}
       tabIndex={0}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') {
@@ -138,7 +139,7 @@ const ResumeCardComponent = ({
           )}
         </div>
       </Card>
-    </div>
+    </article>
   );
 };
 
