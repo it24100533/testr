@@ -161,8 +161,8 @@ export const DATA = {
     },
   ],
   certifications: [
-     {
-      name: "Kubernetes & Cloud Native Associate(KCNA)|CNCF",
+    {
+      name: "Kubernetes and Cloud Native Associate(KCNA)|CNCF",
       issuer: "The Linux Foundation",
       date: "2026",
       logoUrl: "/kcna.svg",
