@@ -1,32 +1,22 @@
+const isProd = process.env.NODE_ENV === 'production'
+const repo = 'testr'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
   experimental: {
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
   },
-  images: {
-    unoptimized: true,
-    formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-  },
-  basePath: '',
-  // Performance optimizations
+  basePath: isProd ? `/${repo}` : '',
+  assetPrefix: isProd ? `/${repo}/` : '',
   compress: true,
   poweredByHeader: false,
   reactStrictMode: false,
-  // Optimize production builds
-  swcMinify: true,
-  // Optimize fonts
-  optimizeFonts: true,
-  // Enable ISR/Incremental Static Regeneration for better caching
-  onDemandEntries: {
-    maxInactiveAge: 60 * 1000,
-    pagesBufferLength: 5,
-  },
-  // Improve build performance
   productionBrowserSourceMaps: false,
-};
+}
 
-export default nextConfig;
+export default nextConfig

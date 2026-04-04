@@ -161,6 +161,13 @@ export const DATA = {
     },
   ],
   certifications: [
+     {
+      name: "Kubernetes & Cloud Native Associate(KCNA)|CNCF",
+      issuer: "The Linux Foundation",
+      date: "2026",
+      logoUrl: "/kcna.svg",
+      link: "https://www.credly.com/badges/7252b027-2513-4ca0-addb-1273ebf6cae4/public_url"
+    },
     {
       name: "FinOps Certified Practitioner",
       issuer: "FinOps Foundation",
