@@ -4,6 +4,7 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+// Triggering fresh GitHub Actions deployment
 import { DATA } from "@/data/resume";
 import { Download } from "lucide-react";
 import Markdown from "react-markdown";
