@@ -10,7 +10,7 @@ export const DATA = {
     "keeping servers steady & Helping machines learn • Delivering scalable, reliable systems that drive real business impact",
   cvUrl: "/cv.pdf",
   summary:
-    "I'm an enthusiastic IT student passionate about **DevOps**, **Cloud technologies** and **AI/ML**. Passionate about solving technical challenges and collaborating to build scalable, reliable systems that make an impact. Also interested in AI and Machine Learning using them to create smart solutions that simplify work and improve efficiency.",
+    "Driven **3rd year undergraduate** with a strong passion for **DevOps, Cloud and AI/ML**, who enjoys building smart, reliable and scalable systems. I enjoy learning new technologies, working in team oriented environments and turning ideas into reality. **Currently seeking an internship** where I can learn, contribute and help build meaningful, high impact solutions.",
   avatarUrl: "/mee2.svg",
   skills: [
     "React",
@@ -120,8 +120,8 @@ export const DATA = {
       href: "https://www.sliit.lk/",
       degree: "BSc(Hons) in IT Specialising in Artificial Intelligence(UG)",
       logoUrl: "/sliit.svg",
-      start: "2024",
-      end: "2028",
+      start: "2023",
+      end: "Present",
       images: [
         "/sliit1.jpg",
         "/sliit2.jpg",
