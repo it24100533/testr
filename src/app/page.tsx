@@ -71,8 +71,7 @@ export default function Page() {
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-            {['DevOps', 'Zsh', 'Bash', 'YAML', 'UNIX/Linux', 'Git', 'GitHub', 'GitLab', 'OOP Concepts', 'AWS', 'Azure', 'CI/CD', 'Jenkins', 'Docker', 'Kubernetes', 'Microservices', 'Python', 'Java', 'ML lifecycle', 'Terraform', 'GitOps', 'ArgoCD', 'Ansible', 'Prometheus', 'Grafana', 'Istio', 'TCP/IP', 'Firewalls', 'VPNs', 'Cloud Security', 'ClickUp', 'SQL', 'RDBMS', 'ELK Stack Basics', 'IaC', 'FinOps', 'SSH', 'MERN Stack'].map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
+                {['CI/CD pipelines', 'Jenkins', 'GitOps', 'ArgoCD', 'Git', 'GitHub', 'GitLab', 'Docker', 'Kubernetes', 'Microservices', 'YAML', 'Terraform', 'Ansible', 'SDLC', 'Python', 'Bash', 'Zsh', 'Java', 'OOP Concepts', 'UNIX/Linux', 'AWS', 'Azure', 'SSH', 'TCP/IP', 'VPNs', 'Firewalls', 'Cloud Security', 'SQL', 'RDBMS', 'Oracle basics', 'Prometheus', 'Grafana', 'Istio','FinOps'].map((skill, id) => (              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
                 <Badge key={skill} variant="blue">{skill}</Badge>
               </BlurFade>
             ))}
