@@ -166,7 +166,7 @@ export default function RootLayout({
                 "email": "ravindu.danth@gmail.com",
                 "description": "DevOps, Cloud Infrastructure, and MLOps specialist focusing on Kubernetes, AWS, and Azure.",
                 "knowsAbout": [
-                  "DevOps", "Cloud Computing", "AI", "Machine Learning", "MLOps", "LLMOps", "Kubernetes", "Docker", "CI/CD", "AWS", "Azure", "Terraform", "GitOps", "ArgoCD", "Ansible", "Observability", "FinOps"
+                  "DevOps", "Cloud Computing", "AI", "Machine Learning", "MLOps", "LLMOps", "Kubernetes", "Docker", "CI/CD", "AWS", "Azure", "Terraform", "GitOps", "ArgoCD", "", "Observability", "FinOps"
                 ],
                 "alumniOf": {
                   "@type": "EducationalOrganization",
