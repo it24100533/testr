@@ -6,7 +6,7 @@ import { useRef } from "react";
 const IMAGES = [
   "/koo1.png",
   "/koo2.png",
-  "/koo3.jpg",
+  "/koo3i.jpg",
   "/koo4.jpg",
   "/koo5.jpg",
   "/koo6a.jpg"
