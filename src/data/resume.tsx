@@ -312,7 +312,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/yttt.mov",
+      video: "/yttt2.mov",
     },
 
     {
