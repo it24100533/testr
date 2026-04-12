@@ -11,7 +11,7 @@ export const DATA = {
   cvUrl: "/cv.pdf",
   summary:
     "Driven **3rd year undergraduate** with a strong passion for **DevOps, Cloud and AI/ML**, who enjoys building smart, reliable and scalable systems. I enjoy learning new technologies, working in team oriented environments and turning ideas into reality. **Currently seeking an internship** where I can learn, contribute and help build meaningful, high impact solutions.",
-  avatarUrl: "/mee2.svg",
+  avatarUrl: "/ravindu-dp.svg",
   skills: [
     "React",
     "Next.js",
