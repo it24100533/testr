@@ -10,7 +10,7 @@ export const DATA = {
     "keeping servers steady & Helping machines learn • Delivering scalable, reliable systems that drive real business impact",
   cvUrl: "/cv.pdf",
   summary:
-    "Driven **3rd year undergraduate** with a strong passion for **DevOps, Cloud and AI/ML**, who enjoys building smart, reliable and scalable systems. I enjoy learning new technologies, working in team oriented environments and turning ideas into reality. **Currently seeking an internship** where I can learn, contribute and help build meaningful, high impact solutions.",
+    "Driven **2nd year undergraduate** with a strong passion for **DevOps, Cloud and AI/ML**, who enjoys building smart, reliable and scalable systems. I enjoy learning new technologies, working in team oriented environments and turning ideas into reality. **Currently seeking an internship** where I can learn, contribute and help build meaningful, high impact solutions.",
   avatarUrl: "/ravindu-dp.svg",
   skills: [
     "React",
@@ -249,43 +249,43 @@ export const DATA = {
     //     "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     // },
 
-    {
-      title: "11MSssbs",
-      href: "#",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Developed a robust MLOps pipeline for real-time YouTube comment sentiment analysis. Integrated a Chrome extension with a Flask backend, utilizing MLflow and DVC for model versioning and reproduction.",
-      technologies: [
-        "MLflow",
-        "DVC",
-        "Flask",
-        "AWS EC2",
-        "AWS ECR",
-        "AWS S3",
-        "Docker",
-        "GitHub Actions",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/ravindudanthanarayana/SentiScope",
-          icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Blog",
-          href: "#", // TODO: replace with actual blog URL
-          icon: <Icons.blog className="size-3" />,
-        },
-        {
-          type: "Website",
-          href: "https://portfolio-0808old.s3.eu-north-1.amazonaws.com/index.html",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/",
-    },
+    // {
+    //   title: "11MSssbs",
+    //   href: "#",
+    //   dates: "June 2023 - Present",
+    //   active: true,
+    //   description:
+    //     "Developed a robust MLOps pipeline for real-time YouTube comment sentiment analysis. Integrated a Chrome extension with a Flask backend, utilizing MLflow and DVC for model versioning and reproduction.",
+    //   technologies: [
+    //     "MLflow",
+    //     "DVC",
+    //     "Flask",
+    //     "AWS EC2",
+    //     "AWS ECR",
+    //     "AWS S3",
+    //     "Docker",
+    //     "GitHub Actions",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/ravindudanthanarayana/SentiScope",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //     {
+    //       type: "Blog",
+    //       href: "#", // TODO: replace with actual blog URL
+    //       icon: <Icons.blog className="size-3" />,
+    //     },
+    //     {
+    //       type: "Website",
+    //       href: "https://portfolio-0808old.s3.eu-north-1.amazonaws.com/index.html",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "/",
+    // },
 
     {
       title: "SentiScope (Production Build)",
@@ -315,149 +315,149 @@ export const DATA = {
       video: "/yttt2.mov",
     },
 
-    {
-      title: "100 Days of DevOps",
-      href: "#",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "A comprehensive 100-day challenge focusing on mastering DevOps tools including Docker, Kubernetes, Jenkins, and Terraform. Implemented various infrastructure automation scenarios on AWS.",
-      technologies: [
-        "MLflow",
-        "DVC",
-        "Flask",
-        "AWS EC2",
-        "AWS ECR",
-        "AWS S3",
-        "Docker",
-        "GitHub Actions",
-      ],
-      links: [
-        {
-          type: "Blog",
-          href: "#", // TODO: replace with actual blog URL
-          icon: <Icons.blog className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/",
-    },
+    // {
+    //   title: "100 Days of DevOps",
+    //   href: "#",
+    //   dates: "June 2023 - Present",
+    //   active: true,
+    //   description:
+    //     "A comprehensive 100-day challenge focusing on mastering DevOps tools including Docker, Kubernetes, Jenkins, and Terraform. Implemented various infrastructure automation scenarios on AWS.",
+    //   technologies: [
+    //     "MLflow",
+    //     "DVC",
+    //     "Flask",
+    //     "AWS EC2",
+    //     "AWS ECR",
+    //     "AWS S3",
+    //     "Docker",
+    //     "GitHub Actions",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Blog",
+    //       href: "#", // TODO: replace with actual blog URL
+    //       icon: <Icons.blog className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "/",
+    // },
 
-    {
-      title: "100 Days of Cloud (Azure)",
-      href: "#",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Dedicated cloud learning journey focused on Microsoft Azure fundamentals, including VM management, networking, and serverless computing using Azure Functions.",
-      technologies: [
-        "MLflow",
-        "DVC",
-        "Flask",
-        "AWS EC2",
-        "AWS ECR",
-        "AWS S3",
-        "Docker",
-        "GitHub Actions",
-      ],
-      links: [
-        {
-          type: "Blog",
-          href: "#", // TODO: replace with actual blog URL
-          icon: <Icons.blog className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/",
-    },
+    // {
+    //   title: "100 Days of Cloud (Azure)",
+    //   href: "#",
+    //   dates: "June 2023 - Present",
+    //   active: true,
+    //   description:
+    //     "Dedicated cloud learning journey focused on Microsoft Azure fundamentals, including VM management, networking, and serverless computing using Azure Functions.",
+    //   technologies: [
+    //     "MLflow",
+    //     "DVC",
+    //     "Flask",
+    //     "AWS EC2",
+    //     "AWS ECR",
+    //     "AWS S3",
+    //     "Docker",
+    //     "GitHub Actions",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Blog",
+    //       href: "#", // TODO: replace with actual blog URL
+    //       icon: <Icons.blog className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "/",
+    // },
 
-    {
-      title: "100 Days of Cloud (AWS)",
-      href: "#",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Intensive project series focusing on Amazon Web Services, implementing architectural patterns for high availability, scalability, and cost-optimization across core AWS services.",
-      technologies: [
-        "MLflow",
-        "DVC",
-        "Flask",
-        "AWS EC2",
-        "AWS ECR",
-        "AWS S3",
-        "Docker",
-        "GitHub Actions",
-      ],
-      links: [
-        {
-          type: "Blog",
-          href: "#", // TODO: replace with actual blog URL
-          icon: <Icons.blog className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/",
-    },
-
-
-
-    {
-      title: "Y2S1 SE Group Project",
-      href: "#",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Collaborative software engineering project focusing on enterprise-scale application development, utilizing Agile methodologies and modern CI/CD practices for delivery.",
-      technologies: [
-        "MLflow",
-        "DVC",
-        "Flask",
-        "AWS EC2",
-        "AWS ECR",
-        "AWS S3",
-        "Docker",
-        "GitHub Actions",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/ravindudanthanarayana/SentiScope",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/",
-    },
+    // {
+    //   title: "100 Days of Cloud (AWS)",
+    //   href: "#",
+    //   dates: "June 2023 - Present",
+    //   active: true,
+    //   description:
+    //     "Intensive project series focusing on Amazon Web Services, implementing architectural patterns for high availability, scalability, and cost-optimization across core AWS services.",
+    //   technologies: [
+    //     "MLflow",
+    //     "DVC",
+    //     "Flask",
+    //     "AWS EC2",
+    //     "AWS ECR",
+    //     "AWS S3",
+    //     "Docker",
+    //     "GitHub Actions",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Blog",
+    //       href: "#", // TODO: replace with actual blog URL
+    //       icon: <Icons.blog className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "/",
+    // },
 
 
 
-    {
-      title: "Y2S1 AI Group Project",
-      href: "#",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Academic group project focused on implementing machine learning algorithms to solve real-world problems, emphasizing model evaluation and optimization strategies.",
-      technologies: [
-        "MLflow",
-        "DVC",
-        "Flask",
-        "AWS EC2",
-        "AWS ECR",
-        "AWS S3",
-        "Docker",
-        "GitHub Actions",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/ravindudanthanarayana/SentiScope",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/",
-    },
+    // {
+    //   title: "Y2S1 SE Group Project",
+    //   href: "#",
+    //   dates: "June 2023 - Present",
+    //   active: true,
+    //   description:
+    //     "Collaborative software engineering project focusing on enterprise-scale application development, utilizing Agile methodologies and modern CI/CD practices for delivery.",
+    //   technologies: [
+    //     "MLflow",
+    //     "DVC",
+    //     "Flask",
+    //     "AWS EC2",
+    //     "AWS ECR",
+    //     "AWS S3",
+    //     "Docker",
+    //     "GitHub Actions",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/ravindudanthanarayana/SentiScope",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "/",
+    // },
+
+
+
+    // {
+    //   title: "Y2S1 AI Group Project",
+    //   href: "#",
+    //   dates: "June 2023 - Present",
+    //   active: true,
+    //   description:
+    //     "Academic group project focused on implementing machine learning algorithms to solve real-world problems, emphasizing model evaluation and optimization strategies.",
+    //   technologies: [
+    //     "MLflow",
+    //     "DVC",
+    //     "Flask",
+    //     "AWS EC2",
+    //     "AWS ECR",
+    //     "AWS S3",
+    //     "Docker",
+    //     "GitHub Actions",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/ravindudanthanarayana/SentiScope",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "/",
+    // },
 
 
 
