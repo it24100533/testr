@@ -8,7 +8,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
     "keeping servers steady & Helping machines learn • Delivering scalable, reliable systems that drive real business impact",
-  cvUrl: "/cv.pdf",
+  cvUrl: "/Ravindu_Danthanarayana_2026.pdf",
   summary:
     "Driven **2nd year undergraduate** with a strong passion for **DevOps, Cloud and AI/ML**, who enjoys building smart, reliable and scalable systems. I enjoy learning new technologies, working in team oriented environments and turning ideas into reality. **Currently seeking an internship** where I can learn, contribute and help build meaningful, high impact solutions.",
   avatarUrl: "/ravindu-dp.svg",
