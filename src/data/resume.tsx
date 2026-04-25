@@ -10,7 +10,7 @@ export const DATA = {
     "keeping servers steady & Helping machines learn • Delivering scalable, reliable systems that drive real business impact",
   cvUrl: "/Ravindu_Danthanarayana_2026.pdf",
   summary:
-    "Driven **2nd year undergraduate** with a strong passion for **DevOps, Cloud and AI/ML**, who enjoys building smart, reliable and scalable systems. I enjoy learning new technologies, working in team oriented environments and turning ideas into reality. **Currently seeking an internship** where I can learn, contribute and help build meaningful, high impact solutions.",
+    "Driven **3rd year undergraduate** with a strong passion for **DevOps, Cloud and AI/ML**, who enjoys building smart, reliable and scalable systems. I enjoy learning new technologies, working in team oriented environments and turning ideas into reality. **Currently seeking an internship** where I can learn, contribute and help build meaningful, high impact solutions.",
   avatarUrl: "/ravindu-dp.svg",
   skills: [
     "React",
