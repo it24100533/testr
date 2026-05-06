@@ -41,7 +41,7 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/ravindudanthanarayana",
+        url: "https://github.com/ravindu-danthanarayana",
         icon: Icons.github,
 
         navbar: true,
@@ -307,7 +307,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/ravindudanthanarayana/SentiScope",
+          href: "https://github.com/ravindu-danthanarayana/SentiScope",
           icon: <Icons.github className="size-3" />,
         },
       ],
