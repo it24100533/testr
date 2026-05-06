@@ -6,8 +6,8 @@ import { useRef } from "react";
 const IMAGES = [
   "/koo1.png",
   "/koo2.png",
-  "/koo3i.jpg",
   "/koo4.jpg",
+  "/koo8.jpg",
   "/koo5.jpg",
   "/koo6a.jpg"
 ];
