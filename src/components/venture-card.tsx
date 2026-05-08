@@ -95,7 +95,7 @@ function VentureCardComponent({
           {location && (
             <p className="text-sm text-muted-foreground">{location}</p>
           )}
-          {description && (
+          {showImages && description && (
             <span className="prose dark:prose-invert text-sm text-muted-foreground">
               {description}
             </span>
@@ -109,7 +109,7 @@ function VentureCardComponent({
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
             className="mt-3 overflow-hidden"
           >
             <div className="grid grid-cols-2 gap-2">
