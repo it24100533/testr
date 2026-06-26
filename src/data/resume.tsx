@@ -179,14 +179,14 @@ export const DATA = {
       name: "AWS Certified AI Practitioner (AIF-C01)",
       issuer: "The Linux Foundation",
       date: "2026",
-      logoUrl: "/kcna.svg",
+      logoUrl: "/aap.svg",
       link: "https://www.credly.com/badges/d2ecc6cd-6d67-41b7-a6d7-963f5a133197/public_url"
     },
         {
       name: "AWS Certified Cloud Practitioner (CLF-C02)",
       issuer: "The Linux Foundation",
       date: "2026",
-      logoUrl: "/kcna.svg",
+      logoUrl: "/acp.svg",
       link: "https://www.credly.com/badges/7252b027-2513-4ca0-addb-1273ebf6cae4/public_url"
     },
     {
