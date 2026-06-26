@@ -162,7 +162,28 @@ export const DATA = {
   ],
   certifications: [
     {
+      name: "Kubernetes & C loud Native Security Associate(KCSA)|CNCF",
+      issuer: "The Linux Foundation",
+      date: "2026",
+      logoUrl: "/kcsa.svg",
+      link: "https://www.credly.com/badges/0bf51563-c029-4014-9e92-680f5b82054c/public_url"
+    },
+    {
       name: "Kubernetes and Cloud Native Associate(KCNA)|CNCF",
+      issuer: "The Linux Foundation",
+      date: "2026",
+      logoUrl: "/kcna.svg",
+      link: "https://www.credly.com/badges/7252b027-2513-4ca0-addb-1273ebf6cae4/public_url"
+    },
+        {
+      name: "AWS Certified AI Practitioner (AIF-C01)",
+      issuer: "The Linux Foundation",
+      date: "2026",
+      logoUrl: "/kcna.svg",
+      link: "https://www.credly.com/badges/d2ecc6cd-6d67-41b7-a6d7-963f5a133197/public_url"
+    },
+        {
+      name: "AWS Certified Cloud Practitioner (CLF-C02)",
       issuer: "The Linux Foundation",
       date: "2026",
       logoUrl: "/kcna.svg",
@@ -181,13 +202,6 @@ export const DATA = {
       date: "2025",
       logoUrl: "/az900.svg",
       link: "https://learn.microsoft.com/en-us/users/ravindudanthanarayana-0163/credentials/a71bab7079e692a6?ref=https%3A%2F%2Fwww.credly.com%2F"
-    },
-    {
-      name: "Oracle Cloud Infrastructure Certified Al Foundations Associate",
-      issuer: "Oracle",
-      date: "2025",
-      logoUrl: "/ora.svg",
-      link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=D4F5BB1E1E59A5BA0167C8B748AE4E4C3D6A102DC023D0CC75E1C1B989D9B082"
     },
     {
       name: "LFS162: Introduction to DevOps and Site Reliability Engineering",
@@ -210,7 +224,6 @@ export const DATA = {
       logoUrl: "/gitf.svg",
       link: "https://www.credly.com/badges/9c91a2c0-c126-4c94-8893-86ac1f3654dc/linked_in_profile"
     },
-
     {
       name: "AWS Well Architected Proficient",
       issuer: "AWS",
